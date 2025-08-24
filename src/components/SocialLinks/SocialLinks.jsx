@@ -18,7 +18,7 @@ const SocialLinks = ({ data }) => {
           onMouseEnter={() => handleIconHover(index)}
           key={index}
         >
-          <span className="st-social-icon"><Icon icon={`fa6-brands:${item.icon}`} /></span>
+          <span className="st-social-icon"><Icon icon={item.icon} /></span>
           <span className="st-icon-name">{item.title}</span>
         </Link>
       ))}

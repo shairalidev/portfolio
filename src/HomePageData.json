@@ -2,147 +2,157 @@
   "heroData": {
     "bgImgLink": "/images/background/hero-bg.jpg",
     "imgLink": "/images/section/hero-img.jpg",
-    "title": "Edward <br /> Davis",
+    "title": "Shair Ali",
     "subTitle": "Hello, I’m",
-    "designation": "Visual Designer"
+    "designation": "Full Stack Developer | Freelancer"
   },
   "aboutData": {
     "imgLink": "/images/section/about.jpg",
     "cvPdf": "/images/Resume.pdf",
-    "title": "Hi There! I'm Edward Davis",
-    "subtitle": "Visual Designer",
-    "text": "I am a Visual Designer with a strong focus on digital branding. Visul design seeks to attract, inspire, create desires and otivate people to respond to messages, with a view to making a favorable impact.",
+    "title": "Hi There! I'm Shair Ali",
+    "subtitle": "Full Stack Developer",
+    "text": "I am a Software Engineer and Freelance Developer with a strong focus on building custom digital solutions. I build many projects during my freelance Journey you can find some of them bellow, My work combines clean code, modern design, and smart functionality to create applications that not only perform flawlessly but also deliver real impact. I aim to craft digital experiences that attract, inspire, and motivate users to engage, turning ideas into powerful, practical, and scalable solutions.",
     "details": [
       {
         "title": "Birthday",
-        "info": "May 07, 1990"
+        "info": "Jan 01, 1999"
       },
       {
         "title": "Phone",
-        "info": "+1 876-369-9009"
+        "info": "+923074734113"
       },
       {
         "title": "Email",
-        "info": "devis@example.com"
+        "info": "shair6470@gmail.com"
       },
-      {
-        "title": "From",
-        "info": "2661 Hich meadow lane bear creek"
-      },
+      
       {
         "title": "Language",
-        "info": "English, Germanic"
+        "info": "English, Urdu"
       },
       {
         "title": "Freelance",
-        "info": "Available"
-      },
-      {
-        "title": "Freelance",
-        "info": "Available"
+        "info": "Level 1 at Fiverr Check out my Clients feedback -> "
       }
     ]
   },
   "serviceData": {
-    "services": [
-      {
-        "imgLink": "/images/icon/icon1.png",
-        "title": "Sketches",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "/images/icon/icon2.png",
-        "title": "UI/UX Design",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "imgLink": "/images/icon/icon3.png",
-        "title": "Product Design",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "imgLink": "/images/icon/icon4.png",
-        "title": "App Design",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "/images/icon/icon5.png",
-        "title": "Motion Graphics",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "600"
-      },
-      {
-        "imgLink": "/images/icon/icon6.png",
-        "title": "Responsive Design",
-        "text": "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
-        "effect": "zoom-out-up",
-        "duration": "500",
-        "delay": "700"
-      }
-    ]
-  },
-  "skillData": {
-    "title": "All the skills that I have in that field of work are mentioned.",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
-    "skills": [
-      {
-        "title": "Photoshop",
-        "progress": "95%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "title": "Motion Graphic",
-        "progress": "75%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "title": "Adobe XD",
-        "progress": "90%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "title": "UX Design",
-        "progress": "85%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "title": "HTML",
-        "progress": "80%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
-      },
-      {
-        "title": "Digital Marketing",
-        "progress": "90%",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "700"
-      }
-    ]
-  },
+  "services": [
+    {
+      "imgLink": "/images/icon/icon1.png",
+      "title": "Custom Web Development",
+      "text": "Building modern, scalable, and high-performing web applications using React, Node.js, and REST APIs.",
+      "effect": "zoom-out-up",
+      "duration": "500",
+      "delay": "200"
+    },
+    {
+      "imgLink": "/images/icon/icon2.png",
+      "title": "UI/UX Design",
+      "text": "Designing clean, user-friendly, and conversion-focused interfaces with attention to detail and user journey optimization.",
+      "effect": "zoom-out-up",
+      "duration": "500",
+      "delay": "300"
+    },
+    {
+      "imgLink": "/images/icon/icon3.png",
+      "title": "E-Commerce Solutions",
+      "text": "Developing full-featured marketplaces, multi-vendor platforms, and secure online stores with seamless payment integration.",
+      "effect": "zoom-out-up",
+      "duration": "500",
+      "delay": "400"
+    },
+    {
+    "imgLink": "/images/icon/icon6.png",
+    "title": "Website Hosting & Deployment",
+    "text": "Experienced in hosting and deploying websites on AWS virtual machines using Nginx, ensuring fast, secure, and reliable performance.",
+    "effect": "zoom-out-up",
+    "duration": "500",
+    "delay": "500"
+    },
+    {
+      "imgLink": "/images/icon/icon5.png",
+      "title": "Desktop Applications",
+      "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs.",
+      "effect": "zoom-out-up",
+      "duration": "500",
+      "delay": "600"
+    },
+    {
+      "imgLink": "/images/icon/icon6.png",
+      "title": "Optimization & Maintenance",
+      "text": "Ensuring websites and apps run flawlessly with speed optimization, bug fixes, and ongoing technical support.",
+      "effect": "zoom-out-up",
+      "duration": "500",
+      "delay": "700"
+    }
+  ]
+   }
+,
+ "skillData": {
+  "title": "Technical Skills & Expertise",
+  "text": "I specialize in delivering end-to-end digital solutions from Python desktop GUIs to modern full-stack web applications, intelligent chatbots, and production-grade deployments on AWS with Nginx. My expertise bridges strong backend logic with seamless frontend interfaces and real-world deployment practices. Some of my featured works include Grand Hotel Selinunte, a full-scale Hotel website; its integrated WhatsApp-supported chatbot and Talk an AI-powered conversational chatbot",
+  "skills": [
+    
+    {
+      "title": "React / Vite Frontend Development",
+      "progress": "90%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "300"
+    },
+    {
+      "title": "Python (Tkinter GUI, Automation)",
+      "progress": "95%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "200"
+    },
+    {
+      "title": "Full-Stack Development",
+      "progress": "90%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "400"
+    },
+    {
+      "title": "Chatbots & WhatsApp Integrations",
+      "progress": "95%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "500"
+    },
+    {
+      "title": "AWS & Nginx Website Hosting",
+      "progress": "90%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "600"
+    },
+    {
+      "title": "Backend APIs & Integration",
+      "progress": "85%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "700"
+    },
+    {
+      "title": "JavaScript / Node.js",
+      "progress": "80%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "800"
+    },
+    {
+      "title": "Freelancing & Client Solutions",
+      "progress": "95%",
+      "effect": "fade-up",
+      "duration": "500",
+      "delay": "900"
+    }
+  ]
+  }
+,
   "portfolioData": {
     "portfolioItems": [
       {
@@ -512,23 +522,23 @@
     ],
     "educationTitle": "Education",
     "education": [
+      
       {
-        "title": "Master of Computer Science",
-        "duration": "2015 - 2016",
-        "subTitle": "University of XYZ",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-      },
-      {
-        "title": "Bachelor of Computer Science",
-        "duration": "2010 - 2014",
-        "subTitle": "University of ABC",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+        "title": "BS Computer Science CGPA (3.75)",
+        "duration": "2019 - 2023",
+        "subTitle": "Riphah International Univercity.",
+        "text": "During my studies, I developed numerous projects, including my Final Year Project a complete social media application featuring image and text posts, public commenting, messaging, friend requests, and other core social networking functionalities"
       },
       {
         "title": "Diploma in Computer Science",
-        "duration": "2006 - 2010",
-        "subTitle": "XYZ Institution",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+        "duration": "2018",
+        "subTitle": "PAST Institution",
+        "text": "After completing my FSC, I pursued a computer diploma that ignited my passion for computer science even further. Since then, I’ve always enjoyed what I do, striving to create unique solutions while constantly learning and evolving. "
+      },
+      {
+        "title": "Keep Moving Forward",
+       
+        "text": "Do you know why sharks keep moving? They must, or they won’t survive. In the same way, I believe in continuous growth always moving forward, always seeking knowledge, and always pushing myself to do the hardest things."
       }
     ]
   },
@@ -538,26 +548,28 @@
     "subTitle": "Visite my social profile and get connected",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat."
   },
+  
   "socialData": [
-    {
-      "icon": "dribbble",
-      "title": "Dribbble",
-      "link": "/"
-    },
-    {
-      "icon": "behance",
-      "title": "Behance",
-      "link": "/"
-    },
-    {
-      "icon": "twitter",
-      "title": "Twitter",
-      "link": "/"
-    },
-    {
-      "icon": "linkedin",
-      "title": "LinkedIn",
-      "link": "/"
-    }
-  ]
+  {
+    "icon": "simple-icons:fiverr",
+    "title": "Fiverr",
+    "link": "https://www.fiverr.com/s/R7yYZp8"
+  },
+  {
+    "icon": "fa6-brands:github",
+    "title": "Github",
+    "link": "https://github.com/shairalidev"
+  },
+  {
+    "icon": "fa6-brands:twitter",
+    "title": "Twitter",
+    "link": "https://x.com/AliShair45057"
+  },
+  {
+    "icon": "fa6-brands:linkedin",
+    "title": "LinkedIn",
+    "link": "https://www.linkedin.com/in/shairali2"
+  }
+   
+]
 }
