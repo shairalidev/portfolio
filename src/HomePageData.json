@@ -73,7 +73,7 @@
     {
       "imgLink": "/images/icon/icon5.png",
       "title": "Desktop Applications",
-      "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs.",
+      "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs,if user want a UI and functionality",
       "effect": "zoom-out-up",
       "duration": "500",
       "delay": "600"
@@ -158,8 +158,8 @@
       {
         "imgLink": "/images/portfolio/portfolio1.jpg",
         "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Grand Hotel Selinunte Website",
+        "subTitle": "Designed and developed the complete official website for Grand Hotel Selinunte with modern UI, booking system, responsive design, and AWS deployment.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "200"
@@ -167,8 +167,8 @@
       {
         "imgLink": "/images/portfolio/portfolio2.jpg",
         "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "AI Customer Support",
+        "subTitle": "Built an advanced AI-powered customer support system with WhatsApp integration for Grand Hotel Selinunte, handling real-time queries, bookings, and guest assistance.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "300"
@@ -176,8 +176,8 @@
       {
         "imgLink": "/images/portfolio/portfolio3.jpg",
         "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Estimate & Receipt Generator",
+        "subTitle": "Developed a cost calculator, estimate generator, and automated receipt system for the Grand Hotel Selinunte team to instantly calculate stay costs and reduce manual work.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "400"
@@ -185,8 +185,8 @@
       {
         "imgLink": "/images/portfolio/portfolio4.jpg",
         "imgLinkLg": "/images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Talk to Jesus – AI Chat Experience",
+        "subTitle": "Created a unique AI-driven web app where users can engage in meaningful conversations with an AI trained to simulate Jesus, offering knowledge and spiritual guidance.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "500"
@@ -194,8 +194,8 @@
       {
         "imgLink": "/images/portfolio/portfolio5.jpg",
         "imgLinkLg": "/images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Accessible Camera App",
+        "subTitle": "Developed a mobile app with features like color grading, zoom, and customizable filters, designed primarily to help color-blind users adjust visuals for better readability and clarity.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "600"
@@ -203,12 +203,13 @@
       {
         "imgLink": "/images/portfolio/portfolio6.jpg",
         "imgLinkLg": "/images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "NSL Buzzer System",
+        "subTitle": "Built a Python Tkinter desktop application for a quiz game, displaying live scores, timers, and buzzer responses on the main screen for an interactive experience.",
         "effect": "fade-up",
         "duration": "500",
         "delay": "700"
-      },
+      }
+,
       {
         "imgLink": "/images/portfolio/portfolio1.jpg",
         "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
@@ -501,24 +502,35 @@
   "resumeData": {
     "experienceTitle": "Experience",
     "experience": [
-      {
-        "title": "Senior UX/UI Designer",
-        "duration": "Jan 2020 - Present",
-        "subTitle": "Bergnaum, Hills and Howe",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-      },
-      {
-        "title": "Product Designer",
-        "duration": "Jan 2016 - December 2019",
-        "subTitle": "Langosh, Sipes and Raynor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-      },
-      {
-        "title": "UI/UX Designer",
-        "duration": "Jan 2014 - December 2015",
-        "subTitle": "Strosin, Maggio and Homenick",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-      }
+  {
+  "title": "Full Stack Developer",
+  "duration": "2024",
+  "subTitle": "Grand Hotel Selinunte",
+  "link": "https://grandhotelselinunte.com/",
+  "text": "Developed and deployed the official Grand Hotel Selinunte website with a modern booking system, custom chatbot with WhatsApp integration, and a fully responsive user experience. Handled end-to-end development including frontend, backend, and AWS Nginx deployment."
+    },
+
+    {
+  "title": "AI Chat Support Developer",
+  "duration": "2024",
+  "subTitle": "Grand Hotel Selinunte",
+  "link": "https://grandhotelselinunte.com/chat",
+  "text": "Built and integrated an AI-powered chat support system with seamless WhatsApp integration for Grand Hotel Selinunte. Designed to handle guest queries, booking assistance, and real-time support, providing a personalized and efficient communication channel between the hotel and its customers."
+},
+
+   {
+  "title": "Full Stack Developer",
+  "duration": "2025",
+  "subTitle": "Grand Hotel Selinunte",
+  "text": "Developed internal tools for the Grand Hotel Selinunte support team, including a PDF generator, receipt generator, and a smart cost calculator to instantly provide guests with accurate stay costs. These tools streamlined the workflow, reduced manual effort, and improved customer service efficiency."
+}
+, {
+  "title": "Talk to Jesus - AI Chat Experience",
+  "duration": "2025",
+  "subTitle": "Grand Hotel Selinunte",
+  "link": "http://talktojesus.duckdns.org/",
+  "text": "Created an innovative AI-driven project called 'Talk to Jesus', offering guests and users a unique interactive chat experience. The system simulates spiritual conversations, blending advanced AI with a meaningful user interface, extending the hotel's digital engagement beyond traditional hospitality tools."
+}
     ],
     "educationTitle": "Education",
     "education": [
@@ -537,7 +549,6 @@
       },
       {
         "title": "Keep Moving Forward",
-       
         "text": "Do you know why sharks keep moving? They must, or they won’t survive. In the same way, I believe in continuous growth always moving forward, always seeking knowledge, and always pushing myself to do the hardest things."
       }
     ]
@@ -546,8 +557,8 @@
     "formTitle": "Just say Hello",
     "title": "Contact Info",
     "subTitle": "Visite my social profile and get connected",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat."
-  },
+   "text": "If you want to turn any idea into reality, feel free to contact me and let’s get it done ASAP."
+ },
   
   "socialData": [
   {
@@ -570,6 +581,5 @@
     "title": "LinkedIn",
     "link": "https://www.linkedin.com/in/shairali2"
   }
-   
 ]
 }
