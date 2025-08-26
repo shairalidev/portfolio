@@ -10,7 +10,7 @@ import Contact from "../components/Contact/Contact";
 import PortfolioSection from '../components/Protfolio/PortfolioSection';
 
 const Home = () => {
-  const { heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData } = data;
+  const { heroData, aboutData, serviceData, skillData, portfolioData, resumeData, reviewData, contactData, socialData } = data;
   return (
     <>
       <Hero data={heroData} socialData={socialData} data-aos="fade-right" />
