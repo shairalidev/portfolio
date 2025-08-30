@@ -1,23 +1,19 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { useEffect } from 'react';
-import Layout from './components/Layout/Layout';
-import Home from './pages/Home';
-import BlogDetails from './components/Blog/BlogDetails';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import Layout from "./components/Layout/Layout"; 
+import Home from "./pages/Home";  // adjust path if your Home.jsx is in a different folder
 
 function App() {
-  useEffect(() => {
-    Aos.init({ once: true });
-  }, []);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

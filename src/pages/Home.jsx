@@ -8,11 +8,24 @@ import BlogSection from '../components/Blog/BlogSection';
 import ReviewSection from '../components/Review/ReviewSection';
 import Contact from "../components/Contact/Contact";
 import PortfolioSection from '../components/Protfolio/PortfolioSection';
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const { heroData, aboutData, serviceData, skillData, portfolioData, resumeData, reviewData, contactData, socialData } = data;
+
   return (
     <>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Shair Ali | Full-Stack Developer & Software Engineer</title>
+        <meta 
+          name="description" 
+          content="Welcome to Shair Ali’s portfolio. I build modern full-stack web apps, AI chatbots, and production-ready deployments. Check out my projects, skills, and experience." 
+        />
+        <link rel="canonical" href="https://shairali.com/" />
+      </Helmet>
+
+      {/* Sections */}
       <Hero data={heroData} socialData={socialData} data-aos="fade-right" />
       <About data={aboutData} data-aos="fade-right" />
       <Iconbox data={serviceData} data-aos="fade-right" />
@@ -25,6 +38,5 @@ const Home = () => {
     </>
   )
 }
-
 
 export default Home;
