@@ -3,7 +3,7 @@
     "bgImgLink": "/images/background/hero-bg.jpg",
     "imgLink": "/images/section/hero-img.jpg",
     "title": "Shair Ali",
-    "subTitle": "Hello, I’m",
+    "subTitle": "Hello, I\u2019m",
     "designation": "Full Stack Developer | Freelancer"
   },
   "aboutData": {
@@ -25,7 +25,6 @@
         "title": "Email",
         "info": "shair6470@gmail.com"
       },
-      
       {
         "title": "Language",
         "info": "English, Urdu"
@@ -37,331 +36,291 @@
     ]
   },
   "serviceData": {
-  "services": [
-    {
-      "imgLink": "/images/icon/icon1.png",
-      "title": "Custom Web Development",
-      "text": "Building modern, scalable, and high-performing web applications using React, Node.js, and REST APIs.",
-      "effect": "zoom-out-up",
-      "duration": "500",
-      "delay": "200"
-    },
-    {
-      "imgLink": "/images/icon/icon2.png",
-      "title": "UI/UX Design",
-      "text": "Designing clean, user-friendly, and conversion-focused interfaces with attention to detail and user journey optimization.",
-      "effect": "zoom-out-up",
-      "duration": "500",
-      "delay": "300"
-    },
-    {
-      "imgLink": "/images/icon/icon3.png",
-      "title": "E-Commerce Solutions",
-      "text": "Developing full-featured marketplaces, multi-vendor platforms, and secure online stores with seamless payment integration.",
-      "effect": "zoom-out-up",
-      "duration": "500",
-      "delay": "400"
-    },
-    {
-    "imgLink": "/images/icon/icon6.png",
-    "title": "Website Hosting & Deployment",
-    "text": "Experienced in hosting and deploying websites on AWS virtual machines using Nginx, ensuring fast, secure, and reliable performance.",
-    "effect": "zoom-out-up",
-    "duration": "500",
-    "delay": "500"
-    },
-    {
-      "imgLink": "/images/icon/icon5.png",
-      "title": "Desktop Applications",
-      "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs,if user want a UI and functionality",
-      "effect": "zoom-out-up",
-      "duration": "500",
-      "delay": "600"
-    },
-    {
-      "imgLink": "/images/icon/icon6.png",
-      "title": "Optimization & Maintenance",
-      "text": "Ensuring websites and apps run flawlessly with speed optimization, bug fixes, and ongoing technical support.",
-      "effect": "zoom-out-up",
-      "duration": "500",
-      "delay": "700"
-    }
-  ]
-   }
-,
- "skillData": {
-  "title": "Technical Skills & Expertise",
-  "text": "I specialize in delivering end-to-end digital solutions from Python desktop GUIs to modern full-stack web applications, intelligent chatbots, and production-grade deployments on AWS with Nginx. My expertise bridges strong backend logic with seamless frontend interfaces and real-world deployment practices. Some of my featured works include Grand Hotel Selinunte, a full-scale Hotel website; its integrated WhatsApp-supported chatbot and Talk an AI-powered conversational chatbot",
-  "skills": [
-    
-    {
-      "title": "React / Vite Frontend Development",
-      "progress": "90%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "300"
-    },
-    {
-      "title": "Python (Tkinter GUI, Automation)",
-      "progress": "95%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "200"
-    },
-    {
-      "title": "Full-Stack Development",
-      "progress": "90%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "400"
-    },
-    {
-      "title": "Chatbots & WhatsApp Integrations",
-      "progress": "95%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "500"
-    },
-    {
-      "title": "AWS & Nginx Website Hosting",
-      "progress": "90%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "600"
-    },
-    {
-      "title": "Backend APIs & Integration",
-      "progress": "85%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "700"
-    },
-    {
-      "title": "JavaScript / Node.js",
-      "progress": "80%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "800"
-    },
-    {
-      "title": "Freelancing & Client Solutions",
-      "progress": "95%",
-      "effect": "fade-up",
-      "duration": "500",
-      "delay": "900"
-    }
-  ]
-  }
-,
-  "portfolioData": {
-    "portfolioItems": [
+    "services": [
       {
-        "imgLink": "/images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
-        "title": "Grand Hotel Selinunte Website",
-        "subTitle": "Designed and developed the complete official website for Grand Hotel Selinunte with modern UI, booking system, responsive design, and AWS deployment.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon1.png",
+        "title": "Custom Web Development",
+        "text": "Building modern, scalable, and high-performing web applications using React, Node.js, and REST APIs.",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "200"
       },
       {
-        "imgLink": "/images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
-        "title": "AI Customer Support",
-        "subTitle": "Built an advanced AI-powered customer support system with WhatsApp integration for Grand Hotel Selinunte, handling real-time queries, bookings, and guest assistance.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon2.png",
+        "title": "UI/UX Design",
+        "text": "Designing clean, user-friendly, and conversion-focused interfaces with attention to detail and user journey optimization.",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "300"
       },
       {
-        "imgLink": "/images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
-        "title": "Estimate & Receipt Generator",
-        "subTitle": "Developed a cost calculator, estimate generator, and automated receipt system for the Grand Hotel Selinunte team to instantly calculate stay costs and reduce manual work.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon3.png",
+        "title": "E-Commerce Solutions",
+        "text": "Developing full-featured marketplaces, multi-vendor platforms, and secure online stores with seamless payment integration.",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "400"
       },
       {
-        "imgLink": "/images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio4_lg.jpg",
-        "title": "Talk to Jesus – AI Chat Experience",
-        "subTitle": "Created a unique AI-driven web app where users can engage in meaningful conversations with an AI trained to simulate Jesus, offering knowledge and spiritual guidance.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon6.png",
+        "title": "Website Hosting & Deployment",
+        "text": "Experienced in hosting and deploying websites on AWS virtual machines using Nginx, ensuring fast, secure, and reliable performance.",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "500"
       },
       {
-        "imgLink": "/images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio5_lg.jpg",
-        "title": "Accessible Camera App",
-        "subTitle": "Developed a mobile app with features like color grading, zoom, and customizable filters, designed primarily to help color-blind users adjust visuals for better readability and clarity.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon5.png",
+        "title": "Desktop Applications",
+        "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs,if user want a UI and functionality",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "600"
       },
       {
-        "imgLink": "/images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio6_lg.jpg",
-        "title": "NSL Buzzer System",
-        "subTitle": "Built a Python Tkinter desktop application for a quiz game, displaying live scores, timers, and buzzer responses on the main screen for an interactive experience.",
-        "effect": "fade-up",
+        "imgLink": "/images/icon/icon6.png",
+        "title": "Optimization & Maintenance",
+        "text": "Ensuring websites and apps run flawlessly with speed optimization, bug fixes, and ongoing technical support.",
+        "effect": "zoom-out-up",
         "duration": "500",
         "delay": "700"
       }
-,
+    ]
+  },
+  "skillData": {
+    "title": "Technical Skills & Expertise",
+    "text": "I specialize in delivering end-to-end digital solutions from Python desktop GUIs to modern full-stack web applications, intelligent chatbots, and production-grade deployments on AWS with Nginx. My expertise bridges strong backend logic with seamless frontend interfaces and real-world deployment practices. Some of my featured works include Grand Hotel Selinunte, a full-scale Hotel website; its integrated WhatsApp-supported chatbot and Talk an AI-powered conversational chatbot",
+    "skills": [
       {
-        "imgLink": "/images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "/images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "React / Vite Frontend Development",
+        "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "300"
       },
       {
-        "imgLink": "/images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Python (Tkinter GUI, Automation)",
+        "progress": "95%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "title": "Full-Stack Development",
+        "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "400"
       },
       {
-        "imgLink": "/images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Chatbots & WhatsApp Integrations",
+        "progress": "95%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "500"
       },
       {
-        "imgLink": "/images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "AWS & Nginx Website Hosting",
+        "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "600"
       },
       {
-        "imgLink": "/images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "Backend APIs & Integration",
+        "progress": "85%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "700"
       },
       {
-        "imgLink": "/images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "title": "JavaScript / Node.js",
+        "progress": "80%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "800"
+      },
+      {
+        "title": "Freelancing & Client Solutions",
+        "progress": "95%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "900"
+      }
+    ]
+  },
+  "portfolioData": {
+    "portfolioItems": [
+      {
+        "imgLink": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Grand Hotel Selinunte website preview on laptop and phone",
+        "title": "Grand Hotel Selinunte Website",
+        "subTitle": "Luxury hotel platform with conversion focused booking journey",
+        "description": "Designed and engineered the official Grand Hotel Selinunte website with a high-performing booking flow, multilingual content strategy, and on-page SEO tuned for hospitality keywords.",
+        "videoUrl": "https://www.youtube.com/embed/hY7m5jjJ9mM",
+        "projectUrl": "https://shairali.com/projects/grand-hotel-selinunte",
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "AWS"
+        ],
         "effect": "fade-up",
         "duration": "500",
         "delay": "200"
       },
       {
-        "imgLink": "/images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "WhatsApp chatbot conversation shown on multiple devices",
+        "title": "AI Concierge & Customer Support",
+        "subTitle": "24/7 WhatsApp automation for hospitality",
+        "description": "Built an AI-powered concierge that handles reservations, upsells spa services, and automatically responds in five languages while syncing to the hotel PMS.",
+        "videoUrl": "https://www.youtube.com/embed/ysz5S6PUM-U",
+        "projectUrl": "https://shairali.com/projects/ai-concierge",
+        "technologies": [
+          "LangChain",
+          "OpenAI",
+          "Twilio",
+          "FastAPI"
+        ],
         "effect": "fade-up",
         "duration": "500",
-        "delay": "300"
+        "delay": "260"
       },
       {
-        "imgLink": "/images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Dashboard interface for estimate and invoice automation tool",
+        "title": "Estimate & Receipt Generator",
+        "subTitle": "Finance automation for hotel operations",
+        "description": "Developed a secure internal web portal that auto-calculates stay costs, produces branded quotes in PDF, and emails receipts without manual formatting.",
+        "videoUrl": "https://www.youtube.com/embed/fn3KWM1kuAw",
+        "projectUrl": "https://shairali.com/projects/estimate-receipt-generator",
+        "technologies": [
+          "React",
+          "Express",
+          "MongoDB",
+          "AWS SES"
+        ],
         "effect": "fade-up",
         "duration": "500",
-        "delay": "400"
+        "delay": "320"
       },
       {
-        "imgLink": "/images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Talk to Jesus AI chat interface",
+        "title": "Talk to Jesus \u2013 AI Experience",
+        "subTitle": "Faith based conversational AI with ethical guardrails",
+        "description": "Crafted an immersive AI companion that blends curated theology content with empathetic responses, optimized for fast voice synthesis and accessibility.",
+        "videoUrl": "https://www.youtube.com/embed/eN6AYHAT8UM",
+        "projectUrl": "https://shairali.com/projects/talk-to-jesus",
+        "technologies": [
+          "Next.js",
+          "Supabase",
+          "Pinecone",
+          "OpenAI"
+        ],
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "380"
+      },
+      {
+        "imgLink": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Accessible camera mobile interface with filters",
+        "title": "Accessible Camera App",
+        "subTitle": "Mobile accessibility toolkit for inclusive media",
+        "description": "Launched a cross-platform camera experience featuring live color grading, dyslexia-friendly overlays, and preset management for creators with low vision.",
+        "videoUrl": "https://www.youtube.com/embed/rUWxSEwctFU",
+        "projectUrl": "https://shairali.com/projects/accessible-camera",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Firebase"
+        ],
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "440"
+      },
+      {
+        "imgLink": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Quiz buzzer desktop application dashboard",
+        "title": "NSL Buzzer System",
+        "subTitle": "Gamified quiz master for live events",
+        "description": "Delivered a real-time quiz control center with HDMI mirroring, latency under 30ms, and responsive scoreboard animations for school tournaments.",
+        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+        "projectUrl": "https://shairali.com/projects/nsl-buzzer",
+        "technologies": [
+          "Python",
+          "Tkinter",
+          "SQLite",
+          "OBS"
+        ],
         "effect": "fade-up",
         "duration": "500",
         "delay": "500"
       },
       {
-        "imgLink": "/images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Analytics dashboard for growth marketing automation",
+        "title": "Growth Marketing Intelligence",
+        "subTitle": "Marketing analytics with predictive scoring",
+        "description": "Implemented a marketing intelligence hub that consolidates ads, CRM, and web analytics, surfacing actionable growth recommendations through predictive scoring.",
+        "videoUrl": "https://www.youtube.com/embed/O6Xo21L0ybE",
+        "projectUrl": "https://shairali.com/projects/growth-marketing-intelligence",
+        "technologies": [
+          "Vue",
+          "D3.js",
+          "BigQuery",
+          "Cloud Functions"
+        ],
         "effect": "fade-up",
         "duration": "500",
-        "delay": "600"
+        "delay": "560"
       },
       {
-        "imgLink": "/images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Portfolio of SaaS landing pages on multiple screens",
+        "title": "SaaS Launch System",
+        "subTitle": "Component library for rapid SaaS launches",
+        "description": "Engineered a design system and deployment pipeline that ships polished SaaS marketing sites with integrated analytics, SEO schema, and localization in minutes.",
+        "videoUrl": "https://www.youtube.com/embed/LXb3EKWsInQ",
+        "projectUrl": "https://shairali.com/projects/saas-launch-system",
+        "technologies": [
+          "Astro",
+          "Tailwind CSS",
+          "Cloudflare Pages",
+          "Contentful"
+        ],
         "effect": "fade-up",
         "duration": "500",
-        "delay": "700"
+        "delay": "620"
       },
       {
-        "imgLink": "/images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+        "imgLinkLg": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Mobile banking experience mockup on smartphone",
+        "title": "Fintech Customer Onboarding",
+        "subTitle": "Biometric onboarding with risk monitoring",
+        "description": "Architected a frictionless onboarding journey for a fintech startup including biometric verification, automated AML checks, and audit-ready compliance logging.",
+        "videoUrl": "https://www.youtube.com/embed/tgbNymZ7vqY",
+        "projectUrl": "https://shairali.com/projects/fintech-onboarding",
+        "technologies": [
+          "Flutter",
+          "Dart",
+          "NestJS",
+          "PostgreSQL"
+        ],
         "effect": "fade-up",
         "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "/images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "imgLink": "/images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "imgLink": "/images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "/images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "/images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
+        "delay": "680"
       }
     ]
   },
@@ -477,7 +436,7 @@
         "imgLink": "/images/client/client3.png",
         "title": "cronkie",
         "designation": "",
-        "text":"This is the second time I've worked with Programmer and it was just as enjoyable! I had a pretty wild request and he worked it out and went above and beyond!"
+        "text": "This is the second time I've worked with Programmer and it was just as enjoyable! I had a pretty wild request and he worked it out and went above and beyond!"
       },
       {
         "imgLink": "/images/client/client1.png",
@@ -502,39 +461,36 @@
   "resumeData": {
     "experienceTitle": "Experience",
     "experience": [
-  {
-  "title": "Full Stack Developer",
-  "duration": "2024",
-  "subTitle": "Grand Hotel Selinunte",
-  "link": "https://grandhotelselinunte.com/",
-  "text": "Developed and deployed the official Grand Hotel Selinunte website with a modern booking system, custom chatbot with WhatsApp integration, and a fully responsive user experience. Handled end-to-end development including frontend, backend, and AWS Nginx deployment."
-    },
-
-    {
-  "title": "AI Chat Support Developer",
-  "duration": "2024",
-  "subTitle": "Grand Hotel Selinunte",
-  "link": "https://grandhotelselinunte.com/chat",
-  "text": "Built and integrated an AI-powered chat support system with seamless WhatsApp integration for Grand Hotel Selinunte. Designed to handle guest queries, booking assistance, and real-time support, providing a personalized and efficient communication channel between the hotel and its customers."
-},
-
-   {
-  "title": "Full Stack Developer",
-  "duration": "2025",
-  "subTitle": "Grand Hotel Selinunte",
-  "text": "Developed internal tools for the Grand Hotel Selinunte support team, including a PDF generator, receipt generator, and a smart cost calculator to instantly provide guests with accurate stay costs. These tools streamlined the workflow, reduced manual effort, and improved customer service efficiency."
-}
-, {
-  "title": "Talk to Jesus - AI Chat Experience",
-  "duration": "2025",
-  "subTitle": "Grand Hotel Selinunte",
-  "link": "http://talktojesus.duckdns.org/",
-  "text": "Created an innovative AI-driven project called 'Talk to Jesus', offering guests and users a unique interactive chat experience. The system simulates spiritual conversations, blending advanced AI with a meaningful user interface, extending the hotel's digital engagement beyond traditional hospitality tools."
-}
+      {
+        "title": "Full Stack Developer",
+        "duration": "2024",
+        "subTitle": "Grand Hotel Selinunte",
+        "link": "https://grandhotelselinunte.com/",
+        "text": "Developed and deployed the official Grand Hotel Selinunte website with a modern booking system, custom chatbot with WhatsApp integration, and a fully responsive user experience. Handled end-to-end development including frontend, backend, and AWS Nginx deployment."
+      },
+      {
+        "title": "AI Chat Support Developer",
+        "duration": "2024",
+        "subTitle": "Grand Hotel Selinunte",
+        "link": "https://grandhotelselinunte.com/chat",
+        "text": "Built and integrated an AI-powered chat support system with seamless WhatsApp integration for Grand Hotel Selinunte. Designed to handle guest queries, booking assistance, and real-time support, providing a personalized and efficient communication channel between the hotel and its customers."
+      },
+      {
+        "title": "Full Stack Developer",
+        "duration": "2025",
+        "subTitle": "Grand Hotel Selinunte",
+        "text": "Developed internal tools for the Grand Hotel Selinunte support team, including a PDF generator, receipt generator, and a smart cost calculator to instantly provide guests with accurate stay costs. These tools streamlined the workflow, reduced manual effort, and improved customer service efficiency."
+      },
+      {
+        "title": "Talk to Jesus - AI Chat Experience",
+        "duration": "2025",
+        "subTitle": "Grand Hotel Selinunte",
+        "link": "http://talktojesus.duckdns.org/",
+        "text": "Created an innovative AI-driven project called 'Talk to Jesus', offering guests and users a unique interactive chat experience. The system simulates spiritual conversations, blending advanced AI with a meaningful user interface, extending the hotel's digital engagement beyond traditional hospitality tools."
+      }
     ],
     "educationTitle": "Education",
     "education": [
-      
       {
         "title": "BS Computer Science CGPA (3.75)",
         "duration": "2019 - 2023",
@@ -545,11 +501,11 @@
         "title": "Diploma in Computer Science",
         "duration": "2018",
         "subTitle": "PAST Institution",
-        "text": "After completing my FSC, I pursued a computer diploma that ignited my passion for computer science even further. Since then, I’ve always enjoyed what I do, striving to create unique solutions while constantly learning and evolving. "
+        "text": "After completing my FSC, I pursued a computer diploma that ignited my passion for computer science even further. Since then, I\u2019ve always enjoyed what I do, striving to create unique solutions while constantly learning and evolving. "
       },
       {
         "title": "Keep Moving Forward",
-        "text": "Do you know why sharks keep moving? They must, or they won’t survive. In the same way, I believe in continuous growth always moving forward, always seeking knowledge, and always pushing myself to do the hardest things."
+        "text": "Do you know why sharks keep moving? They must, or they won\u2019t survive. In the same way, I believe in continuous growth always moving forward, always seeking knowledge, and always pushing myself to do the hardest things."
       }
     ]
   },
@@ -557,30 +513,29 @@
     "formTitle": "Just say Hello",
     "title": "Contact Info",
     "subTitle": "Visite my social profile and get connected",
-   "text": "If you want to turn any idea into reality, feel free to contact me and let’s get it done ASAP."
- },
-  
+    "text": "If you want to turn any idea into reality, feel free to contact me and let\u2019s get it done ASAP."
+  },
   "socialData": [
-  {
-    "icon": "simple-icons:fiverr",
-    "title": "Fiverr",
-    "linkk": "https://www.fiverr.com/iram_rashid1",
-    "link" : "https://www.fiverr.com/s/DB3QqGy"
-  },
-  {
-    "icon": "fa6-brands:github",
-    "title": "Github",
-    "link": "https://github.com/shairalidev"
-  },
-  {
-    "icon": "fa6-brands:twitter",
-    "title": "Twitter",
-    "link": "https://x.com/AliShair45057"
-  },
-  {
-    "icon": "fa6-brands:linkedin",
-    "title": "LinkedIn",
-    "link": "https://www.linkedin.com/in/shairali2"
-  }
-]
+    {
+      "icon": "simple-icons:fiverr",
+      "title": "Fiverr",
+      "linkk": "https://www.fiverr.com/iram_rashid1",
+      "link": "https://www.fiverr.com/s/DB3QqGy"
+    },
+    {
+      "icon": "fa6-brands:github",
+      "title": "Github",
+      "link": "https://github.com/shairalidev"
+    },
+    {
+      "icon": "fa6-brands:twitter",
+      "title": "Twitter",
+      "link": "https://x.com/AliShair45057"
+    },
+    {
+      "icon": "fa6-brands:linkedin",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/shairali2"
+    }
+  ]
 }

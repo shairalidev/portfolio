@@ -54,7 +54,13 @@ const Hero = ({ data, socialData }) => {
         </div>
       </div>
       <div className="st-hero-img st-to-right">
-        <img className="" src={`${imgLink}`} alt="Hero" />
+        <img
+          className=""
+          src={`${imgLink}`}
+          alt={`${title} portrait`}
+          loading="lazy"
+          decoding="async"
+        />
         <div className="st-social-group">
           <SocialLinks data={socialData} />
         </div>
