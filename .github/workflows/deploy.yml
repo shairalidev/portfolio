@@ -1,0 +1,144 @@
+name: Deploy Portfolio to Production
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Reason for manual deploy"
+        required: false
+        default: "Manual trigger"
+
+# Prevent concurrent deployments — never cancel an in-progress deploy
+concurrency:
+  group: production-deployment
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "20"
+  ARTIFACT_NAME: dist-${{ github.sha }}
+  DEPLOY_HOST: shairali.com
+  DEPLOY_PATH: /var/www/shairali/dist
+
+# ─────────────────────────────────────────────
+# JOB 1 — Build
+# ─────────────────────────────────────────────
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      # Writes .env.production from the BACKEND_ENV GitHub Secret.
+      # Store the full file content (multi-line) as that secret.
+      - name: Write .env.production
+        run: |
+          printf '%s' "$BACKEND_ENV" > .env.production
+          echo ".env.production written successfully"
+        env:
+          BACKEND_ENV: ${{ secrets.BACKEND_ENV }}
+
+      - name: Build
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: dist/
+          retention-days: 1
+          if-no-files-found: error
+
+  # ─────────────────────────────────────────────
+  # JOB 2 — Deploy
+  # ─────────────────────────────────────────────
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: production
+      url: https://www.shairali.com
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: dist/
+
+      # ── SSH setup ──────────────────────────────
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$SERVER_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          chmod 644 ~/.ssh/known_hosts
+        env:
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+
+      # ── Sync dist/ to /var/www/shairali/dist/ ──
+      - name: Deploy via rsync
+        run: |
+          rsync \
+            --archive \
+            --verbose \
+            --compress \
+            --delete \
+            --checksum \
+            --timeout=60 \
+            -e "ssh -i ~/.ssh/deploy_key -p 22 -o BatchMode=yes" \
+            dist/ \
+            "${SERVER_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/"
+        env:
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+
+      # ── Post-deploy health check ───────────────
+      - name: Verify deployment
+        run: |
+          ssh \
+            -i ~/.ssh/deploy_key \
+            -p 22 \
+            -o BatchMode=yes \
+            "${SERVER_USER}@${DEPLOY_HOST}" \
+            "ls -la ${DEPLOY_PATH}/ | head -20 && echo 'Deployment verified'"
+        env:
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+
+      # ── Always clean up the key ────────────────
+      - name: Cleanup SSH key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+      # ── Summary ───────────────────────────────
+      - name: Deployment summary
+        if: success()
+        run: |
+          echo "======================================"
+          echo "  Deployed successfully to production"
+          echo "======================================"
+          echo "  URL     : https://www.shairali.com"
+          echo "  Path    : ${DEPLOY_PATH}"
+          echo "  Commit  : ${{ github.sha }}"
+          echo "  Branch  : ${{ github.ref_name }}"
+          echo "  Actor   : ${{ github.actor }}"
+          echo "  Trigger : ${{ github.event_name }}"
+          echo "======================================"
