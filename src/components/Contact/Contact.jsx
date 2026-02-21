@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Contact = ({ data, socialData }) => {
-  const { title, text, subTitle } = data;
+  const { title, text, subTitle, formTitle } = data;
   return (
     <section id="contact" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -14,7 +14,7 @@ const Contact = ({ data, socialData }) => {
       <div className="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
         <div className="row d-flex">
           <div className="col-lg-6">
-            <h3 className="st-contact-title">Just say Hello</h3>
+            <h3 className="st-contact-title">{formTitle}</h3>
             <div id="st-alert"></div>
             <form action="#" method="POST" className="st-contact-form" id="contact-form">
               <div className="st-form-field">

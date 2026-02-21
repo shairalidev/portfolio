@@ -4,14 +4,14 @@
     "imgLink": "/images/section/hero-img.jpg",
     "title": "Shair Ali",
     "subTitle": "Hello, I\u2019m",
-    "designation": "Full Stack Developer | Freelancer"
+    "designation": "Full Stack Developer & React Expert"
   },
   "aboutData": {
     "imgLink": "/images/section/about.jpg",
     "cvPdf": "/images/Resume.pdf",
-    "title": "Hi There! I'm Shair Ali",
-    "subtitle": "Full Stack Developer",
-    "text": "I am a Software Engineer and Freelance Developer with a strong focus on building custom digital solutions. I build many projects during my freelance Journey you can find some of them bellow, My work combines clean code, modern design, and smart functionality to create applications that not only perform flawlessly but also deliver real impact. I aim to craft digital experiences that attract, inspire, and motivate users to engage, turning ideas into powerful, practical, and scalable solutions.",
+    "title": "Hi There! I\u2019m Shair Ali",
+    "subtitle": "Full Stack Developer & React Expert | Pakistan",
+    "text": "I am a Full Stack Developer and Software Engineer based in Pakistan, specializing in custom digital solutions for clients worldwide. With expertise in React.js, Node.js, React Native, and AI-powered applications, I transform complex ideas into high-performing web and mobile products. From building e-commerce platforms and AI chatbots to deploying production-ready applications on AWS, my work combines clean code, modern design, and real-world impact. If you\u2019re looking to hire a skilled full stack developer or React expert, let\u2019s build something great together.",
     "details": [
       {
         "title": "Birthday",
@@ -31,7 +31,7 @@
       },
       {
         "title": "Freelance",
-        "info": "Level 1 at Fiverr Check out my Clients feedback "
+        "info": "Level 1 Seller on Fiverr \u2014 Check out my client reviews"
       }
     ]
   },
@@ -40,7 +40,7 @@
       {
         "imgLink": "/images/icon/icon1.png",
         "title": "Custom Web Development",
-        "text": "Building modern, scalable, and high-performing web applications using React, Node.js, and REST APIs.",
+        "text": "Building modern, scalable, and high-performing web applications using React.js, Node.js, and REST APIs \u2014 from MVPs to full-scale production platforms tailored to your business.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "200"
@@ -48,7 +48,7 @@
       {
         "imgLink": "/images/icon/icon2.png",
         "title": "UI/UX Design",
-        "text": "Designing clean, user-friendly, and conversion-focused interfaces with attention to detail and user journey optimization.",
+        "text": "Designing clean, user-friendly, and conversion-focused interfaces with a sharp eye for detail, accessibility, and user journey optimization that drives real engagement.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "300"
@@ -56,7 +56,7 @@
       {
         "imgLink": "/images/icon/icon3.png",
         "title": "E-Commerce Solutions",
-        "text": "Developing full-featured marketplaces, multi-vendor platforms, and secure online stores with seamless payment integration.",
+        "text": "Developing full-featured online stores, multi-vendor marketplaces, and secure payment integrations \u2014 built for performance, scalability, and maximum conversion.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "400"
@@ -64,7 +64,7 @@
       {
         "imgLink": "/images/icon/icon6.png",
         "title": "Website Hosting & Deployment",
-        "text": "Experienced in hosting and deploying websites on AWS virtual machines using Nginx, ensuring fast, secure, and reliable performance.",
+        "text": "Expert in deploying and hosting websites on AWS virtual machines using Nginx \u2014 ensuring fast load times, SSL security, and 99.9% uptime for production applications.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "500"
@@ -72,7 +72,7 @@
       {
         "imgLink": "/images/icon/icon5.png",
         "title": "Desktop Applications",
-        "text": "Building powerful, user-friendly desktop applications, tailored to your workflows and business needs,if user want a UI and functionality",
+        "text": "Building powerful, cross-platform desktop applications tailored to your workflows \u2014 from Python GUI tools and data automation scripts to fully custom business software.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "600"
@@ -80,7 +80,7 @@
       {
         "imgLink": "/images/icon/icon6.png",
         "title": "Optimization & Maintenance",
-        "text": "Ensuring websites and apps run flawlessly with speed optimization, bug fixes, and ongoing technical support.",
+        "text": "Keeping your websites and apps running at peak performance through speed optimization, SEO tuning, bug fixes, and ongoing technical support.",
         "effect": "zoom-out-up",
         "duration": "500",
         "delay": "700"
@@ -89,10 +89,10 @@
   },
   "skillData": {
     "title": "Technical Skills & Expertise",
-    "text": "I specialize in delivering end-to-end digital solutions from Python desktop GUIs to modern full-stack web applications, intelligent chatbots, and production-grade deployments on AWS with Nginx. My expertise bridges strong backend logic with seamless frontend interfaces and real-world deployment practices. Some of my featured works include Grand Hotel Selinunte, a full-scale Hotel website; its integrated WhatsApp-supported chatbot and Talk an AI-powered conversational chatbot",
+    "text": "As a full stack developer based in Pakistan, I deliver end-to-end digital solutions \u2014 from React.js web apps and React Native mobile applications to AI chatbots, custom software development, and production-grade AWS deployments with Nginx. My expertise bridges strong backend logic with polished frontend interfaces. Featured projects include the Grand Hotel Selinunte luxury website, a multilingual AI concierge with WhatsApp integration, and Talk \u2014 an AI-powered conversational chatbot. Available to hire for freelance and remote contract projects worldwide.",
     "skills": [
       {
-        "title": "React / Vite Frontend Development",
+        "title": "React.js / React Native Development",
         "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
@@ -106,42 +106,42 @@
         "delay": "200"
       },
       {
-        "title": "Full-Stack Development",
+        "title": "Full-Stack Development (Node.js, REST APIs)",
         "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "400"
       },
       {
-        "title": "Chatbots & WhatsApp Integrations",
+        "title": "AI Chatbots & WhatsApp Integration",
         "progress": "95%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "500"
       },
       {
-        "title": "AWS & Nginx Website Hosting",
+        "title": "AWS & Nginx Production Deployment",
         "progress": "90%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "600"
       },
       {
-        "title": "Backend APIs & Integration",
+        "title": "Backend APIs & Database Design",
         "progress": "85%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "700"
       },
       {
-        "title": "JavaScript / Node.js",
+        "title": "JavaScript / TypeScript / Node.js",
         "progress": "80%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "800"
       },
       {
-        "title": "Freelancing & Client Solutions",
+        "title": "Freelancing & Global Client Delivery",
         "progress": "95%",
         "effect": "fade-up",
         "duration": "500",
@@ -156,7 +156,7 @@
         "imgLinkLg": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80",
         "imageAlt": "Grand Hotel Selinunte website preview on laptop and phone",
         "title": "Grand Hotel Selinunte Website",
-        "subTitle": "Luxury hotel platform with conversion focused booking journey",
+        "subTitle": "Luxury hotel platform with conversion-focused booking journey",
         "description": "Designed and engineered the official Grand Hotel Selinunte website with a high-performing booking flow, multilingual content strategy, and on-page SEO tuned for hospitality keywords.",
         "videoUrl": "https://www.youtube.com/embed/hY7m5jjJ9mM",
         "projectUrl": "https://shairali.com/projects/grand-hotel-selinunte",
@@ -213,7 +213,7 @@
         "imgLinkLg": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?auto=format&fit=crop&w=1600&q=80",
         "imageAlt": "Talk to Jesus AI chat interface",
         "title": "Talk to Jesus \u2013 AI Experience",
-        "subTitle": "Faith based conversational AI with ethical guardrails",
+        "subTitle": "Faith-based conversational AI with ethical guardrails",
         "description": "Crafted an immersive AI companion that blends curated theology content with empathetic responses, optimized for fast voice synthesis and accessibility.",
         "videoUrl": "https://www.youtube.com/embed/eN6AYHAT8UM",
         "projectUrl": "https://shairali.com/projects/talk-to-jesus",
@@ -423,38 +423,20 @@
       {
         "imgLink": "/images/client/client1.png",
         "title": "huynhd",
-        "designation": "",
-        "text": "He has excelled at delivering quickly and the product of his services are amazing."
+        "designation": "Fiverr Client",
+        "text": "He excelled at delivering quickly and the quality of his work is amazing. Highly recommend hiring him for any web development project."
       },
       {
         "imgLink": "/images/client/client2.png",
         "title": "harshiamarasena",
-        "designation": "",
-        "text": "His responsiveness and attention to detail is exceptional. Kudos for the timely delivery!"
+        "designation": "Fiverr Client",
+        "text": "His responsiveness and attention to detail is exceptional. Kudos for the timely delivery and professional communication throughout the project!"
       },
       {
         "imgLink": "/images/client/client3.png",
         "title": "cronkie",
-        "designation": "",
-        "text": "This is the second time I've worked with Programmer and it was just as enjoyable! I had a pretty wild request and he worked it out and went above and beyond!"
-      },
-      {
-        "imgLink": "/images/client/client1.png",
-        "title": "Richard Miles",
-        "designation": "Chairman",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
-      },
-      {
-        "imgLink": "/images/client/client2.png",
-        "title": "Vesta Shufelt",
-        "designation": "Executive Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
-      },
-      {
-        "imgLink": "/images/client/client3.png",
-        "title": "Joseph Alves",
-        "designation": "Managing Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "designation": "Fiverr Client",
+        "text": "This is the second time I\u2019ve worked with Shair and it was just as great! I had a complex request and he worked it out perfectly \u2014 went above and beyond every time."
       }
     ]
   },
@@ -466,54 +448,54 @@
         "duration": "2024",
         "subTitle": "Grand Hotel Selinunte",
         "link": "https://grandhotelselinunte.com/",
-        "text": "Developed and deployed the official Grand Hotel Selinunte website with a modern booking system, custom chatbot with WhatsApp integration, and a fully responsive user experience. Handled end-to-end development including frontend, backend, and AWS Nginx deployment."
+        "text": "Developed and deployed the official Grand Hotel Selinunte website with a modern booking system, custom React.js frontend, and a fully responsive user experience. Handled end-to-end full stack development including frontend, backend, and AWS Nginx production deployment."
       },
       {
         "title": "AI Chat Support Developer",
         "duration": "2024",
         "subTitle": "Grand Hotel Selinunte",
         "link": "https://grandhotelselinunte.com/chat",
-        "text": "Built and integrated an AI-powered chat support system with seamless WhatsApp integration for Grand Hotel Selinunte. Designed to handle guest queries, booking assistance, and real-time support, providing a personalized and efficient communication channel between the hotel and its customers."
+        "text": "Built and integrated an AI-powered chat support system with WhatsApp integration for Grand Hotel Selinunte. Designed to handle guest queries, booking assistance, and real-time multilingual support \u2014 providing a personalized and efficient communication channel."
       },
       {
-        "title": "Full Stack Developer",
+        "title": "Full Stack Developer \u2014 Internal Tools",
         "duration": "2025",
         "subTitle": "Grand Hotel Selinunte",
-        "text": "Developed internal tools for the Grand Hotel Selinunte support team, including a PDF generator, receipt generator, and a smart cost calculator to instantly provide guests with accurate stay costs. These tools streamlined the workflow, reduced manual effort, and improved customer service efficiency."
+        "text": "Developed internal tools for the Grand Hotel Selinunte team including a PDF generator, receipt generator, and a smart cost calculator. These React and Node.js-powered tools streamlined workflows, reduced manual effort, and improved overall customer service efficiency."
       },
       {
-        "title": "Talk to Jesus - AI Chat Experience",
+        "title": "Talk to Jesus \u2014 AI Chat Experience",
         "duration": "2025",
-        "subTitle": "Grand Hotel Selinunte",
+        "subTitle": "Freelance Project",
         "link": "http://talktojesus.duckdns.org/",
-        "text": "Created an innovative AI-driven project called 'Talk to Jesus', offering guests and users a unique interactive chat experience. The system simulates spiritual conversations, blending advanced AI with a meaningful user interface, extending the hotel's digital engagement beyond traditional hospitality tools."
+        "text": "Created an innovative AI-driven project called \u2018Talk to Jesus\u2019, offering users a unique interactive conversational AI experience. Built with Next.js, Supabase, and OpenAI, blending advanced AI with an empathetic and accessible user interface."
       }
     ],
     "educationTitle": "Education",
     "education": [
       {
-        "title": "BS Computer Science CGPA (3.75)",
-        "duration": "2019 - 2023",
-        "subTitle": "Riphah International Univercity.",
-        "text": "During my studies, I developed numerous projects, including my Final Year Project a complete social media application featuring image and text posts, public commenting, messaging, friend requests, and other core social networking functionalities"
+        "title": "BS Computer Science \u2014 CGPA 3.75",
+        "duration": "2019 \u2013 2023",
+        "subTitle": "Riphah International University",
+        "text": "Developed numerous projects including my Final Year Project \u2014 a complete social media application featuring image and text posts, public commenting, real-time messaging, friend requests, and core social networking functionalities."
       },
       {
         "title": "Diploma in Computer Science",
         "duration": "2018",
         "subTitle": "PAST Institution",
-        "text": "After completing my FSC, I pursued a computer diploma that ignited my passion for computer science even further. Since then, I\u2019ve always enjoyed what I do, striving to create unique solutions while constantly learning and evolving. "
+        "text": "After completing my FSC, I pursued a computer science diploma that ignited my passion for programming and software development. Since then, I\u2019ve never stopped learning, always pushing myself to build better and smarter solutions."
       },
       {
-        "title": "Keep Moving Forward",
-        "text": "Do you know why sharks keep moving? They must, or they won\u2019t survive. In the same way, I believe in continuous growth always moving forward, always seeking knowledge, and always pushing myself to do the hardest things."
+        "title": "Always Moving Forward",
+        "text": "Do you know why sharks keep moving? They must, or they won\u2019t survive. In the same way, I believe in continuous growth \u2014 always learning, always evolving, and always taking on challenges that make me a better developer."
       }
     ]
   },
   "contactData": {
     "formTitle": "Just say Hello",
     "title": "Contact Info",
-    "subTitle": "Visite my social profile and get connected",
-    "text": "If you want to turn any idea into reality, feel free to contact me and let\u2019s get it done ASAP."
+    "subTitle": "Visit my social profiles and get connected",
+    "text": "Looking to hire a full stack developer or React expert? Let\u2019s turn your idea into reality \u2014 reach out and let\u2019s build something great together."
   },
   "socialData": [
     {
