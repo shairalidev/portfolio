@@ -1,47 +1,52 @@
 import PropTypes from 'prop-types';
 import './Portfolio.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
-import { useState } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import SinglePortfolio from './SinglePortfolio';
 import Modal from '../Modal/Modal';
 
 const PortfolioSection = ({ data }) => {
-  // Modal
-  const [modal, setModal] = useState(false);
-  const [tempData, setTempData] = useState([]);
-
-  const getData = (imgLink, title, subTitle) => {
-    let tempData = [imgLink, title, subTitle];
-    setTempData(item => [1, ...tempData]);
-    setModal(true);
-  }
-
-  const modalClose = () => {
-    setModal(false);
-  }
-
-
-  // Load Items
-  const { portfolioItems } = data;
+  const { portfolioItems = [] } = data;
   const itemsPerPage = 6;
+
   const [visibleItems, setVisibleItems] = useState(
     portfolioItems.slice(0, itemsPerPage),
   );
+  const [showLoadMore, setShowLoadMore] = useState(portfolioItems.length > itemsPerPage);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const [showLoadMore, setShowLoadMore] = useState(true);
+  useEffect(() => {
+    const initialItems = portfolioItems.slice(0, itemsPerPage);
+    setVisibleItems(initialItems);
+    setShowLoadMore(portfolioItems.length > initialItems.length);
+  }, [portfolioItems]);
 
-  const loadMoreItems = () => {
-    const currentLength = visibleItems.length;
-    const nextChunk = portfolioItems.slice(
-      currentLength,
-      currentLength + itemsPerPage,
-    );
-    setVisibleItems(prevItems => [...prevItems, ...nextChunk]);
+  const loadMoreItems = useCallback(() => {
+    setVisibleItems(prevItems => {
+      const nextIndex = prevItems.length;
+      const nextChunk = portfolioItems.slice(nextIndex, nextIndex + itemsPerPage);
+      const updatedItems = [...prevItems, ...nextChunk];
 
-    if (currentLength + itemsPerPage >= portfolioItems.length) {
-      setShowLoadMore(false);
-    }
-  };
+      if (updatedItems.length >= portfolioItems.length) {
+        setShowLoadMore(false);
+      }
+
+      if (nextChunk.length === 0) {
+        setShowLoadMore(false);
+        return prevItems;
+      }
+
+      return updatedItems;
+    });
+  }, [portfolioItems]);
+
+  const handleProjectSelect = useCallback((project) => {
+    setSelectedProject(project);
+  }, []);
+
+  const modalClose = useCallback(() => {
+    setSelectedProject(null);
+  }, []);
 
   return (
     <>
@@ -50,8 +55,8 @@ const PortfolioSection = ({ data }) => {
         <SectionHeading title={'Portfolio'} />
         <div className="container">
           <div className="row">
-            {visibleItems.map((element, index) => (
-              <SinglePortfolio data={element} key={index} getData={getData} />
+            {visibleItems.map((element) => (
+              <SinglePortfolio data={element} key={element.title} onSelect={handleProjectSelect} />
             ))}
             <div className="col-lg-12 text-center">
               <div className="st-portfolio-btn">
@@ -59,6 +64,8 @@ const PortfolioSection = ({ data }) => {
                   <button
                     className="st-btn st-style1 st-color1"
                     onClick={loadMoreItems}
+                    type="button"
+                    aria-label="Load more portfolio projects"
                   >
                     Load more
                   </button>
@@ -69,7 +76,9 @@ const PortfolioSection = ({ data }) => {
         </div>
         <div className="st-height-b100 st-height-lg-b80"></div>
       </section>
-      {modal === true ? <Modal img={tempData[1]} title={tempData[2]} subTitle={tempData[3]} modalClose={modalClose} /> : ""}
+      {selectedProject && (
+        <Modal project={selectedProject} modalClose={modalClose} />
+      )}
     </>
   );
 };
