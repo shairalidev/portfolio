@@ -1,0 +1,425 @@
+@import '../sass/default/variable';
+
+// ──────────────────────────────────────────
+// Not Found
+// ──────────────────────────────────────────
+.st-project-not-found {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+
+  .st-project-not-found-icon {
+    font-size: 80px;
+    color: $base-color1;
+    margin-bottom: 24px;
+    opacity: 0.6;
+  }
+
+  h2 {
+    color: $base-color3;
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+  }
+}
+
+// ──────────────────────────────────────────
+// Hero Banner
+// ──────────────────────────────────────────
+.st-pdetail-hero {
+  position: relative;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+    height: 320px;
+  }
+}
+
+.st-pdetail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 13, 27, 0.3) 0%,
+    rgba(7, 13, 27, 0.96) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 56px;
+}
+
+.st-pdetail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+
+  svg {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background: $base-color1;
+    border-color: $base-color1;
+    color: $dark-color1;
+    transform: translateX(-2px);
+  }
+}
+
+.st-pdetail-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+
+  span {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $base-color1;
+    background: rgba($base-color1, 0.12);
+    border: 1px solid rgba($base-color1, 0.3);
+    padding: 4px 12px;
+    border-radius: 50px;
+  }
+}
+
+.st-pdetail-hero-content h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 14px;
+  line-height: 1.15;
+
+  @media (max-width: 991px) {
+    font-size: 34px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 26px;
+  }
+}
+
+.st-pdetail-hero-sub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+  max-width: 700px;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+// ──────────────────────────────────────────
+// Body
+// ──────────────────────────────────────────
+.st-pdetail-body {
+  background: $dark-color2;
+  padding: 64px 0 80px;
+}
+
+// Section label (icon + text header)
+.st-pdetail-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: $base-color1;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  svg {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+}
+
+// ──────────────────────────────────────────
+// Video Section
+// ──────────────────────────────────────────
+.st-pdetail-video-section {
+  margin-bottom: 56px;
+}
+
+.st-pdetail-video {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #050a14;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+  }
+
+  video {
+    width: 100%;
+    display: block;
+    max-height: 540px;
+    object-fit: cover;
+  }
+}
+
+// ──────────────────────────────────────────
+// Details Grid
+// ──────────────────────────────────────────
+.st-pdetail-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 64px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.st-pdetail-description {
+  font-size: 16px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 32px;
+}
+
+.st-pdetail-screenshot {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+// ──────────────────────────────────────────
+// Sidebar
+// ──────────────────────────────────────────
+.st-pdetail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.st-pdetail-info-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 24px;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: $base-color1;
+    margin-bottom: 18px;
+
+    svg {
+      font-size: 17px;
+    }
+  }
+}
+
+.st-pdetail-cta-card {
+  border-color: rgba($base-color1, 0.2);
+  background: rgba($base-color1, 0.04);
+}
+
+.st-pdetail-cta-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  text-align: center;
+
+  svg {
+    font-size: 17px;
+  }
+}
+
+.st-pdetail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  span {
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: rgba($base-color1, 0.1);
+    color: $base-color1;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba($base-color1, 0.2);
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba($base-color1, 0.18);
+    }
+  }
+}
+
+.st-pdetail-portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  svg {
+    font-size: 17px;
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    color: $base-color1;
+    text-decoration: none;
+
+    svg {
+      transform: translateX(-3px);
+    }
+  }
+}
+
+// ──────────────────────────────────────────
+// Project Navigation (Prev / Next)
+// ──────────────────────────────────────────
+.st-pdetail-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 56px;
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.st-pdetail-nav-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 16px;
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+  overflow: hidden;
+
+  &:hover {
+    border-color: rgba($base-color1, 0.35);
+    background: rgba($base-color1, 0.04);
+    text-decoration: none;
+    transform: translateY(-2px);
+
+    .st-pdetail-nav-img-overlay {
+      opacity: 0.5;
+    }
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.st-pdetail-nav-next {
+  flex-direction: row-reverse;
+  text-align: right;
+
+  .st-pdetail-nav-info {
+    align-items: flex-end;
+  }
+}
+
+.st-pdetail-nav-img {
+  position: relative;
+  width: 80px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+}
+
+.st-pdetail-nav-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: $dark-color1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.st-pdetail-nav-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.st-pdetail-nav-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $base-color1;
+
+  svg {
+    font-size: 14px;
+  }
+}
+
+.st-pdetail-nav-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}

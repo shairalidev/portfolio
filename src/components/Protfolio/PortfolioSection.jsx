@@ -3,7 +3,6 @@ import './Portfolio.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { useState, useCallback, useEffect } from 'react';
 import SinglePortfolio from './SinglePortfolio';
-import Modal from '../Modal/Modal';
 
 const PortfolioSection = ({ data }) => {
   const { portfolioItems = [] } = data;
@@ -13,7 +12,6 @@ const PortfolioSection = ({ data }) => {
     portfolioItems.slice(0, itemsPerPage),
   );
   const [showLoadMore, setShowLoadMore] = useState(portfolioItems.length > itemsPerPage);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     const initialItems = portfolioItems.slice(0, itemsPerPage);
@@ -40,46 +38,33 @@ const PortfolioSection = ({ data }) => {
     });
   }, [portfolioItems]);
 
-  const handleProjectSelect = useCallback((project) => {
-    setSelectedProject(project);
-  }, []);
-
-  const modalClose = useCallback(() => {
-    setSelectedProject(null);
-  }, []);
-
   return (
-    <>
-      <section id="portfolio">
-        <div className="st-height-b100 st-height-lg-b80"></div>
-        <SectionHeading title={'Portfolio'} />
-        <div className="container">
-          <div className="row">
-            {visibleItems.map((element) => (
-              <SinglePortfolio data={element} key={element.title} onSelect={handleProjectSelect} />
-            ))}
-            <div className="col-lg-12 text-center">
-              <div className="st-portfolio-btn">
-                {showLoadMore && (
-                  <button
-                    className="st-btn st-style1 st-color1"
-                    onClick={loadMoreItems}
-                    type="button"
-                    aria-label="Load more portfolio projects"
-                  >
-                    Load more
-                  </button>
-                )}
-              </div>
+    <section id="portfolio">
+      <div className="st-height-b100 st-height-lg-b80"></div>
+      <SectionHeading title={'Portfolio'} />
+      <div className="container">
+        <div className="row">
+          {visibleItems.map((element) => (
+            <SinglePortfolio data={element} key={element.slug || element.title} />
+          ))}
+          <div className="col-lg-12 text-center">
+            <div className="st-portfolio-btn">
+              {showLoadMore && (
+                <button
+                  className="st-btn st-style1 st-color1"
+                  onClick={loadMoreItems}
+                  type="button"
+                  aria-label="Load more portfolio projects"
+                >
+                  Load more
+                </button>
+              )}
             </div>
           </div>
         </div>
-        <div className="st-height-b100 st-height-lg-b80"></div>
-      </section>
-      {selectedProject && (
-        <Modal project={selectedProject} modalClose={modalClose} />
-      )}
-    </>
+      </div>
+      <div className="st-height-b100 st-height-lg-b80"></div>
+    </section>
   );
 };
 
@@ -88,5 +73,3 @@ PortfolioSection.propTypes = {
 };
 
 export default PortfolioSection;
-
-
