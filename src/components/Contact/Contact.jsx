@@ -162,7 +162,7 @@ const Contact = ({ data, socialData }) => {
                 </div>
                 <div className="st-single-info-details">
                   <h4>Phone</h4>
-                  <span>+923074734113</span>
+                  <a href="https://wa.me/923074734113" target="_blank" rel="noopener noreferrer">+923074734113</a>
                 </div>
               </div>
               <div className="st-social-info">

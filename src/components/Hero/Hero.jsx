@@ -58,7 +58,8 @@ const Hero = ({ data, socialData }) => {
           className=""
           src={`${imgLink}`}
           alt={`${title} portrait`}
-          loading="lazy"
+          loading="eager"
+          fetchpriority="high"
           decoding="async"
         />
         <div className="st-social-group">

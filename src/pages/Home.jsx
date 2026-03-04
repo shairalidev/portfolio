@@ -1,4 +1,6 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 import data from '../HomePageData.json';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
@@ -12,6 +14,18 @@ import PortfolioSection from '../components/Protfolio/PortfolioSection';
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
+  const { hash } = useLocation();
+
+  // When arriving via /#section link from a project page, scroll to that section
+  useEffect(() => {
+    if (!hash) return;
+    const target = hash.replace('#', '');
+    const timer = setTimeout(() => {
+      scroller.scrollTo(target, { smooth: true, offset: -80, duration: 500 });
+    }, 120);
+    return () => clearTimeout(timer);
+  }, [hash]);
+
   const { heroData, aboutData, serviceData, skillData, portfolioData, resumeData, reviewData, contactData, socialData } = data;
   const featuredProjects = portfolioData?.portfolioItems ?? [];
   const siteUrl = 'https://shairali.com/';

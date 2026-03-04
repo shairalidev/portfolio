@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 const SinglePortfolio = ({ data }) => {
-  const { imgLink, title, subTitle, slug, technologies, effect, duration, delay, imageAlt } = data;
+  const { imgLink, imgLinkLg, title, subTitle, slug, technologies, effect, duration, delay, imageAlt } = data;
 
   return (
     <div
@@ -22,6 +22,8 @@ const SinglePortfolio = ({ data }) => {
             <div className="st-portfolio-img st-zoom-in">
               <img
                 src={imgLink}
+                srcSet={imgLinkLg ? `${imgLink} 900w, ${imgLinkLg} 1600w` : undefined}
+                sizes={imgLinkLg ? '(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw' : undefined}
                 alt={imageAlt || title}
                 loading="lazy"
                 decoding="async"
@@ -52,6 +54,7 @@ const SinglePortfolio = ({ data }) => {
 SinglePortfolio.propTypes = {
   data: PropTypes.shape({
     imgLink: PropTypes.string,
+    imgLinkLg: PropTypes.string,
     title: PropTypes.string,
     subTitle: PropTypes.string,
     slug: PropTypes.string,
