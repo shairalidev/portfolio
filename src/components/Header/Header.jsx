@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { to: 'about',     label: 'About' },
   { to: 'resume',    label: 'Resume' },
   { to: 'portfolio', label: 'Portfolio' },
+  { to: 'review',    label: 'Reviews' },
   { to: 'contact',   label: 'Contact' },
 ];
 
@@ -47,12 +48,7 @@ const Header = () => {
       <div className="st-main-header">
         <div className="container">
           <div className="st-main-header-in">
-            <div className="st-main-header-left">
-              <Link className="st-site-branding" to="/" id="hero">
-                <img src="/images/logo.png" alt="Shair Ali – Full Stack Developer Pakistan" fetchpriority="high" decoding="async" />
-              </Link>
-            </div>
-            <div className="st-main-header-right">
+<div className="st-main-header-right">
               <div className="st-nav">
                 <ul
                   className="st-nav-list st-onepage-nav"

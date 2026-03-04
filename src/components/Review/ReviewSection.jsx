@@ -6,9 +6,9 @@ import Carousel from '../Slider/Carousel';
 const Review = ({ data }) => {
 
   return (
-    <section className="st-dark-bg">
+    <section id="review" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
-      <SectionHeading title="Review" />
+      <SectionHeading title="Client Reviews" />
       <div className="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
         <Carousel data={data} />
       </div>

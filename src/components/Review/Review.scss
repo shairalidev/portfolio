@@ -81,4 +81,18 @@
   .st-testimonial-designation {
     line-height: 1.3em;
   }
+
+  .st-testimonial-stars {
+    margin-top: 8px;
+
+    .st-star {
+      font-size: 16px;
+      color: $base-color4;
+      margin-right: 2px;
+
+      &.filled {
+        color: $base-color1;
+      }
+    }
+  }
 }
