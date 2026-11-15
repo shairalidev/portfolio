@@ -8,11 +8,7 @@ const Footer = () => (
       <div className="site-footer__top">
         <div className="site-footer__brand">
           <Link to="/" className="logo" aria-label={`${profile.name}, home`}>
-            <span className="logo__mark" aria-hidden="true">SA</span>
-            <span className="logo__text">
-              {profile.name}
-              <small>{profile.role}</small>
-            </span>
+            {profile.name}<span className="logo__dot" aria-hidden="true">.</span>
           </Link>
           <p>{profile.intro}</p>
         </div>

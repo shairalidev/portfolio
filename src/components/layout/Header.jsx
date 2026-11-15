@@ -4,6 +4,8 @@ import { Icon } from '@iconify/react';
 import Button from '../ui/Button';
 import { NAV_LINKS, profile } from '../../lib/content';
 
+const fiverr = profile.socials.find((s) => s.label === 'Fiverr');
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -52,11 +54,7 @@ const Header = () => {
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`}>
       <div className="container site-header__inner">
         <Link to="/" className="logo" aria-label={`${profile.name}, home`}>
-          <span className="logo__mark" aria-hidden="true">SA</span>
-          <span className="logo__text">
-            {profile.name}
-            <small>{profile.role}</small>
-          </span>
+          {profile.name}<span className="logo__dot" aria-hidden="true">.</span>
         </Link>
 
         <nav className="site-nav" aria-label="Main">
@@ -72,6 +70,13 @@ const Header = () => {
         </nav>
 
         <div className="site-header__actions">
+          {fiverr && (
+            <a href={fiverr.url} target="_blank" rel="noopener noreferrer" className="fiverr-badge">
+              <strong>Fiverr</strong>
+              <span>{profile.fiverrLevel}</span>
+              <span className="visually-hidden"> (opens in a new tab)</span>
+            </a>
+          )}
           <Button to="/contact" size="sm" className="site-header__cta" icon="solar:arrow-right-up-linear">
             Let&apos;s talk
           </Button>
@@ -101,6 +106,12 @@ const Header = () => {
           </ul>
         </nav>
         <div className="mobile-menu__footer">
+          {fiverr && (
+            <a href={fiverr.url} target="_blank" rel="noopener noreferrer" className="fiverr-badge fiverr-badge--menu">
+              <strong>Fiverr</strong>
+              <span>{profile.fiverrLevel}</span>
+            </a>
+          )}
           <a href={`mailto:${profile.email}`} className="mobile-menu__mail">
             <Icon icon="solar:letter-linear" aria-hidden="true" /> {profile.email}
           </a>
