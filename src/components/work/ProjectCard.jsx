@@ -90,7 +90,7 @@ const ProjectCard = ({ project, index, variant = 'grid' }) => {
           {project.tags.map((tag) => <li key={tag} className="tag">{tag}</li>)}
         </ul>
         <Link to={href} className="link-arrow">
-          Read case study <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
+          See how I built it <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
         </Link>
       </div>
     </Reveal>

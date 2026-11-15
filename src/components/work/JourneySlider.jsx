@@ -62,7 +62,7 @@ const JourneySlider = ({ steps }) => {
         {steps.map((step, i) => (
           <li key={step.image} className={`journey__slide${i === current ? ' is-current' : ''}`}>
             <button type="button" className="journey__image" onClick={() => setZoomed(i)} aria-label={`Enlarge step ${i + 1}: ${step.title}`}>
-              <img src={step.image} alt={`${step.title}: ${step.caption}`} loading="lazy" decoding="async" />
+              <img src={step.image} alt={`${step.title}: ${step.caption} (built by Shair Ali)`} loading="lazy" decoding="async" />
             </button>
             <div className="journey__text">
               <span className="journey__num">{String(i + 1).padStart(2, '0')}</span>

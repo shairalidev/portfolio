@@ -49,7 +49,7 @@ const Lightbox = ({ images, index, onClose, onChange }) => {
     >
       {current && (
         <figure className="lightbox__figure">
-          <img src={current.src} alt="" />
+          <img src={current.src} alt={current.alt ? `${current.alt}, by Shair Ali` : ''} />
           <figcaption>
             <span>{current.alt}</span>
             <span className="lightbox__count">{index + 1} / {images.length}</span>

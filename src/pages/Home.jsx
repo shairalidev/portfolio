@@ -42,7 +42,7 @@ const Home = () => (
         {
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Case studies',
+          name: 'Projects built by Shair Ali',
           itemListElement: projects.map((p, i) => ({
             '@type': 'ListItem',
             position: i + 1,

@@ -7,14 +7,14 @@ import { absoluteUrl, projects } from '../lib/content';
 const Work = () => (
   <>
     <Seo
-      title="Case Studies by Shair Ali, Full-Stack Developer"
-      description="Case studies by Shair Ali: a real-time expert marketplace, a lien-compliance SaaS, a tenant certification platform and a hotel site with an AI assistant."
+      title="Projects by Shair Ali – Full-Stack Developer"
+      description="Projects built by Shair Ali: a real-time expert marketplace, a lien-compliance SaaS, a tenant certification platform and a hotel site with an AI assistant."
       path="/work"
       jsonLd={[
         {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Work & case studies',
+          name: 'Projects by Shair Ali',
           url: absoluteUrl('/work'),
           hasPart: projects.map((p) => ({ '@type': 'CreativeWork', name: p.title, url: absoluteUrl(`/work/${p.slug}`) })),
         },
@@ -23,7 +23,7 @@ const Work = () => (
 
     <PageHeader
       eyebrow="Work"
-      title="Case studies"
+      title="Client projects"
       text="Real products for real businesses, each one designed, built, deployed and maintained by me. Open a project to see the problem, the solution, the architecture and the details."
     />
 

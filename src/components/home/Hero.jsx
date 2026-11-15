@@ -23,7 +23,7 @@ const HeroStack = () => (
   <div className="hero-stack" aria-hidden="true">
     {projects.slice(0, 3).map((p, i) => (
       <div key={p.slug} className={`hero-stack__card hero-stack__card--${i}`} style={{ '--project': p.accent }}>
-        <img src={p.cover} alt={p.coverAlt} width="800" height="500" loading={i === 1 ? 'eager' : 'lazy'} decoding="async" />
+        <img src={p.cover} alt={`${p.coverAlt}, built by Shair Ali`} width="800" height="500" loading={i === 1 ? 'eager' : 'lazy'} decoding="async" />
       </div>
     ))}
   </div>
@@ -87,7 +87,7 @@ const Hero = () => {
           </h1>
           <p className="hero__lead">{profile.intro}</p>
           <div className="hero__actions">
-            <Button to="/work" size="lg" icon="solar:arrow-right-linear">View case studies</Button>
+            <Button to="/work" size="lg" icon="solar:arrow-right-linear">See my work</Button>
             <Button href={whatsappUrl()} variant="ghost" size="lg" iconLeft="ic:baseline-whatsapp">
               Chat on WhatsApp
             </Button>

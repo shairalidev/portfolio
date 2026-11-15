@@ -98,7 +98,7 @@ const ServicePage = () => {
                       <strong>{project.title}</strong>
                       <span>{item.text}</span>
                       <span className="link-arrow">
-                        Read the case study <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
+                        See how I built it <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
                       </span>
                     </span>
                   </Link>

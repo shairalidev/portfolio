@@ -26,7 +26,7 @@ const Timeline = ({ items }) => (
           <p>{item.text}</p>
           {item.slug && (
             <Link to={`/work/${item.slug}`} className="link-arrow">
-              View case study <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
+              See the project <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
             </Link>
           )}
         </div>

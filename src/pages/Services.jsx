@@ -47,7 +47,7 @@ const Services = () => (
     >
       <div className="hero__actions">
         <Button to="/contact" icon="solar:arrow-right-linear">Get a quote</Button>
-        <Button to="/work" variant="ghost">See case studies</Button>
+        <Button to="/work" variant="ghost">See my work</Button>
       </div>
     </PageHeader>
 

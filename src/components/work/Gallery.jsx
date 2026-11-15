@@ -13,7 +13,7 @@ const Gallery = ({ images }) => {
         {images.map((img, i) => (
           <Reveal key={img.src} delay={(i % 3) * 80} className={`gallery__item${i === 0 ? ' gallery__item--wide' : ''}`}>
             <button type="button" onClick={() => setActive(i)} aria-label={`Enlarge: ${img.alt}`}>
-              <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
+              <img src={img.src} alt={`${img.alt}, by Shair Ali`} loading="lazy" decoding="async" />
               <span className="gallery__zoom" aria-hidden="true"><Icon icon="solar:maximize-square-linear" /></span>
             </button>
           </Reveal>

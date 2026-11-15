@@ -33,7 +33,7 @@ const Footer = () => (
         </div>
 
         <div className="site-footer__col">
-          <h3>Case studies</h3>
+          <h3>Projects</h3>
           <ul>
             {projects.map((p) => (
               <li key={p.slug}><Link to={`/work/${p.slug}`}>{p.title}</Link></li>

@@ -27,7 +27,7 @@ const CaseStudy = () => {
   return (
     <article className="case" style={{ '--project': project.accent }}>
       <Seo
-        title={`${project.title} case study by Shair Ali`}
+        title={`${project.title} – built by Shair Ali`}
         description={`${project.title}, built by Shair Ali: ${project.tagline}`}
         imageAlt={project.coverAlt}
         path={`/work/${project.slug}`}
@@ -67,7 +67,7 @@ const CaseStudy = () => {
         <div className="container">
           <Reveal>
             <Link to="/work" className="back-link">
-              <Icon icon="solar:arrow-left-linear" aria-hidden="true" /> All case studies
+              <Icon icon="solar:arrow-left-linear" aria-hidden="true" /> All projects
             </Link>
             <p className="eyebrow">{project.category} · {project.year}</p>
             <h1 className="case-hero__title">{project.title}</h1>
@@ -91,7 +91,7 @@ const CaseStudy = () => {
             <div className="case-hero__actions">
               <Button href={project.liveUrl} icon="solar:arrow-right-up-linear">Visit live site</Button>
               <Button
-                href={whatsappUrl(`Hi Shair, I saw your ${project.title} case study and I'd like to discuss a similar project.`)}
+                href={whatsappUrl(`Hi Shair, I saw your ${project.title} project and I'd like to discuss a similar project.`)}
                 variant="ghost"
                 iconLeft="ic:baseline-whatsapp"
               >
@@ -116,7 +116,7 @@ const CaseStudy = () => {
                     fallbackAlt={project.coverAlt}
                   />
                 ) : (
-                  <img src={project.hero} alt={project.coverAlt} width="1600" height="1000" />
+                  <img src={project.hero} alt={`${project.coverAlt}, built by Shair Ali`} width="1600" height="1000" />
                 )}
               </BrowserFrame>
             </TiltCard>
@@ -171,7 +171,7 @@ const CaseStudy = () => {
                 <Reveal variant={i % 2 ? 'left' : 'right'} className="highlight__media">
                   <TiltCard max={4}>
                     <BrowserFrame>
-                      <img src={h.image} alt={h.alt} width={h.width} height={h.height} loading="lazy" decoding="async" />
+                      <img src={h.image} alt={`${h.alt}, by Shair Ali`} width={h.width} height={h.height} loading="lazy" decoding="async" />
                     </BrowserFrame>
                   </TiltCard>
                 </Reveal>
@@ -260,7 +260,7 @@ const CaseStudy = () => {
       )}
 
       {/* Prev / next */}
-      <nav className="section case-nav" aria-label="More case studies">
+      <nav className="section case-nav" aria-label="More projects">
         <div className="container case-nav__inner">
           {[{ p: prev, label: 'Previous project', dir: 'prev' }, { p: next, label: 'Next project', dir: 'next' }].map(({ p, label, dir }) => (
             <Link key={dir} to={`/work/${p.slug}`} className={`case-nav__card case-nav__card--${dir}`} style={{ '--project': p.accent }}>
