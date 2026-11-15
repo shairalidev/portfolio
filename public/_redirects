@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects. Pages are prerendered to static HTML (see scripts/prerender.mjs).
+# Legacy project URLs from the old site:
+/project/:slug  /work/:slug  301

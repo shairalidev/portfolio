@@ -1,0 +1,84 @@
+{
+  "services": [
+    {
+      "icon": "solar:widget-5-bold-duotone",
+      "title": "SaaS & web platforms",
+      "text": "Complete products from the first wireframe to production: marketing site, app, API, database and admin back office, built to scale with your business.",
+      "points": ["React, Next.js & Vue", "Node.js / Express APIs", "Admin dashboards & client portals"]
+    },
+    {
+      "icon": "solar:card-transfer-bold-duotone",
+      "title": "Payments & billing",
+      "text": "Stripe Checkout, wallets, subscriptions and per-minute billing, with verified webhooks, idempotency and reconciliation done right the first time.",
+      "points": ["Stripe Checkout & Payment Intents", "Wallets, credits & payouts", "Refunds, disputes & audit trails"]
+    },
+    {
+      "icon": "solar:chat-round-video-bold-duotone",
+      "title": "Real-time features",
+      "text": "Live chat, presence, notifications, voice and video calls for marketplaces, support desks and collaborative tools.",
+      "points": ["Socket.io", "WebRTC with LiveKit", "Scheduling & live session timers"]
+    },
+    {
+      "icon": "solar:magic-stick-3-bold-duotone",
+      "title": "AI assistants & automation",
+      "text": "AI chatbots that know your business, on your site and on WhatsApp, plus automations that remove repetitive admin work.",
+      "points": ["LLM chat (OpenAI, Groq, Gemini)", "WhatsApp integration", "PDF, email & workflow automation"]
+    },
+    {
+      "icon": "solar:server-square-cloud-bold-duotone",
+      "title": "Cloud deployment & DevOps",
+      "text": "Production-grade hosting you can rely on: Linux servers, Nginx, SSL, process management and push-to-deploy pipelines.",
+      "points": ["AWS EC2 & DigitalOcean", "Nginx, PM2 & Cloudflare", "GitHub Actions CI/CD"]
+    },
+    {
+      "icon": "solar:refresh-circle-bold-duotone",
+      "title": "Legacy modernization",
+      "text": "Taking over existing codebases: stabilise, secure and modernise them while they stay live, then keep shipping new features.",
+      "points": ["Code audits & security hardening", "Incremental refactors", "Ongoing maintenance & support"]
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discover",
+      "text": "A short call to understand your goals, users and constraints. You get a clear scope, a timeline and a fixed or milestone-based quote."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "text": "Architecture, data model and interface designed before the build, so there are no surprises later."
+    },
+    {
+      "step": "03",
+      "title": "Build",
+      "text": "Weekly, visible progress on a staging link. You see real software early and steer it as it takes shape."
+    },
+    {
+      "step": "04",
+      "title": "Launch & run",
+      "text": "Production deployment, monitoring and CI/CD. I stay on after launch for fixes, improvements and new features."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you work alone or with a team?",
+      "a": "Alone. Every project in this portfolio was designed, built and deployed by me. You get one accountable engineer who knows the whole system, with no handoffs and no account managers."
+    },
+    {
+      "q": "Can you take over an existing project?",
+      "a": "Yes. Tenant Certification is a good example: I took over a platform started by earlier teams, stabilised and modernised it while it stayed live, and I'm still its sole developer."
+    },
+    {
+      "q": "How do you price projects?",
+      "a": "Usually a fixed price per milestone after a short discovery call, so you always know what you're paying for. Ongoing maintenance can be monthly or hourly."
+    },
+    {
+      "q": "Which time zones do you work with?",
+      "a": "My clients are in the USA and Europe. I keep several overlapping hours each day for calls and stay reachable on WhatsApp and email."
+    },
+    {
+      "q": "Do you handle hosting and deployment?",
+      "a": "Yes. I set up servers (AWS, DigitalOcean), Nginx, SSL, process management and automated deployments, and I can run them for you after launch."
+    }
+  ]
+}

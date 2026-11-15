@@ -1,0 +1,34 @@
+{
+  "name": "Shair Ali",
+  "role": "Full-Stack Developer",
+  "siteUrl": "https://shairali.com",
+  "availability": "Available for new projects",
+  "headline": "I design, build and run production web platforms, end to end.",
+  "intro": "Solo full-stack developer for startups and growing businesses in the USA and Europe. From the first wireframe to the Nginx config, I take products to production and keep them running.",
+  "location": "Pakistan · Working remotely worldwide",
+  "email": "shair6470@gmail.com",
+  "whatsapp": "923074734113",
+  "whatsappMessage": "Hi Shair, I found your portfolio and would like to discuss a project.",
+  "cv": "/images/Resume.pdf",
+  "portrait": "/images/profile/shair-ali.webp",
+  "portraitAlt": "Portrait of Shair Ali, full-stack developer",
+  "ogImage": "/images/og-image.jpg",
+  "languages": ["English", "Urdu"],
+  "bio": [
+    "I'm Shair Ali, a full-stack developer who owns products end to end. I plan the architecture, design the interface, write the frontend and the API, model the data, wire up payments and third-party services, and then deploy and operate everything on Linux servers with automated CI/CD.",
+    "Over the last year I've shipped more than 1,800 commits across four live platforms: a real-time, pay-per-minute consultation marketplace in Italy, a lien-compliance SaaS in California, a national tenant-certification platform in the US and a hotel's website and AI guest support in Sicily.",
+    "Clients work with me because they get one accountable engineer who speaks product as well as code. I communicate clearly, ship in small, visible increments and stay around after launch."
+  ],
+  "stats": [
+    { "value": "4", "label": "Production platforms live" },
+    { "value": "1,800+", "label": "Commits shipped in the last 12 months" },
+    { "value": "100%", "label": "Solo delivery, from design to DevOps" },
+    { "value": "US · EU", "label": "Clients in the USA & Italy" }
+  ],
+  "socials": [
+    { "label": "GitHub", "icon": "mdi:github", "url": "https://github.com/shairalidev" },
+    { "label": "LinkedIn", "icon": "mdi:linkedin", "url": "https://www.linkedin.com/in/shairali2" },
+    { "label": "Fiverr", "icon": "simple-icons:fiverr", "url": "https://www.fiverr.com/s/DB3QqGy" },
+    { "label": "X (Twitter)", "icon": "simple-icons:x", "url": "https://x.com/AliShair45057" }
+  ]
+}

@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # Build output
 dist/
+
+# Temporary SSR bundle used by scripts/prerender.mjs
+dist-ssr/

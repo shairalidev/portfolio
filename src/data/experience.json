@@ -1,0 +1,53 @@
+{
+  "experience": [
+    {
+      "period": "2026",
+      "title": "Full-Stack Developer (solo)",
+      "org": "Cover Me Lien Services · CoverM Enterprise, LLC, California",
+      "text": "Designed, built and deployed a lien-compliance SaaS with a deadline calculator, Stripe checkout, a secure client portal and an admin back office.",
+      "slug": "cover-me-lien-services"
+    },
+    {
+      "period": "2025 – present",
+      "title": "Lead & Sole Developer",
+      "org": "Stellar Properties Certification, LLC, USA",
+      "text": "Took over and modernized a national tenant-certification platform: payments, automated credentials, security hardening and CI/CD.",
+      "slug": "tenant-certification"
+    },
+    {
+      "period": "2025 – 2026",
+      "title": "Full-Stack Developer (solo)",
+      "org": "Rivelya, Italy",
+      "text": "Built a pay-per-minute expert marketplace with real-time chat, voice and video, a wallet and per-minute billing, and expert and admin consoles.",
+      "slug": "rivelya"
+    },
+    {
+      "period": "2024 – 2025",
+      "title": "Full-Stack Developer",
+      "org": "Grand Hotel Selinunte, Sicily",
+      "text": "Built the hotel's website, AI chat support with WhatsApp, and internal quote and receipt tools.",
+      "slug": "grand-hotel-selinunte"
+    },
+    {
+      "period": "Ongoing",
+      "title": "Freelance Developer",
+      "org": "Fiverr Level 1 Seller & direct clients",
+      "text": "Web apps, automation tools and integrations for clients worldwide, with consistent 5-star reviews for quality and communication.",
+      "slug": null
+    }
+  ],
+  "education": [
+    {
+      "period": "2019 – 2023",
+      "title": "BS Computer Science · CGPA 3.75",
+      "org": "Riphah International University",
+      "text": "Final year project: a complete social media application with posts, comments, real-time messaging and friend requests."
+    },
+    {
+      "period": "2018",
+      "title": "Diploma in Computer Science",
+      "org": "PAST Institution",
+      "text": "Where my passion for software development started."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+:root {
+  color-scheme: dark;
+
+  // Surfaces
+  --bg: #05070d;
+  --bg-elev: #0a0f1b;
+  --bg-elev-2: #0f1626;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-hover: rgba(255, 255, 255, 0.065);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  // Text
+  --text: #eef1f7;
+  --text-muted: #a2abbf;
+  --text-dim: #7d869e; // ≥4.5:1 on every surface
+
+  // Brand
+  --accent: #fec544;
+  --accent-ink: #1b1404;
+  --accent-soft: rgba(254, 197, 68, 0.12);
+  --accent-2: #ff8a4c;
+  --cool: #7c8cff;
+  --whatsapp: #25d366;
+  --success: #3ddc97;
+  --danger: #ff6b6b;
+  --gradient: linear-gradient(120deg, #fec544 0%, #ff8a4c 55%, #ff6b9a 100%);
+
+  // Shape
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --shadow-lg: 0 40px 100px -30px rgba(0, 0, 0, 0.75);
+  --shadow-md: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+
+  // Type
+  // Self-hosted variable fonts (@fontsource-variable), imported in main.jsx
+  --font-display: 'Space Grotesk Variable', 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  // Layout
+  --container: 1200px;
+  --gutter: 16px;
+  --header-h: 72px;
+  --section-y: 88px;
+
+  // Motion
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  @media (min-width: 768px) {
+    --gutter: 28px;
+    --section-y: 120px;
+  }
+
+  @media (min-width: 1280px) {
+    --gutter: 32px;
+    --section-y: 140px;
+  }
+}

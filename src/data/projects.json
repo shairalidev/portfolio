@@ -1,0 +1,738 @@
+[
+  {
+    "slug": "rivelya",
+    "title": "Rivelya",
+    "client": "Rivelya · Italy",
+    "category": "Marketplace",
+    "tags": [
+      "Real-time",
+      "Payments",
+      "WebRTC"
+    ],
+    "year": "2025–2026",
+    "timeline": "Nov 2025 – Apr 2026",
+    "role": "Solo full-stack developer: product, frontend, backend, infrastructure & DevOps",
+    "liveUrl": "https://www.rivelya.com",
+    "accent": "#7c6cff",
+    "tagline": "A pay-per-minute expert consultation marketplace with live chat, voice and video.",
+    "summary": "An Italian marketplace where clients top up a wallet and consult verified experts by chat, voice or video, billed by the minute, booked ahead or started on demand.",
+    "cover": "/images/projects/rivelya/thumb.webp",
+    "coverAlt": "Rivelya homepage with featured experts",
+    "hero": "/images/projects/rivelya/hero.webp",
+    "video": {
+      "mp4": "/videos/rivelya.mp4",
+      "poster": "/images/projects/rivelya/hero.webp"
+    },
+    "challenge": "Minute-based consultations are a high-volume, trust-sensitive business. The client needed a platform that could match clients with available experts instantly, meter every session precisely, collect payment upfront, hold and settle expert earnings and do all of it reliably in real time, without anyone reconciling balances by hand.",
+    "solution": "I built Rivelya from scratch as a one-developer product: a React app for clients, experts and admins; an Express and Socket.io backend; self-hosted LiveKit for WebRTC voice and video; and a billing engine on MongoDB transactions that the server controls. The server starts, meters and closes every session, so the money is always right, even when a browser tab isn't.",
+    "metrics": [
+      {
+        "value": "1,250+",
+        "label": "Commits, all mine"
+      },
+      {
+        "value": "180+",
+        "label": "API endpoints"
+      },
+      {
+        "value": "29",
+        "label": "Data models"
+      },
+      {
+        "value": "3",
+        "label": "Live channels: chat, voice, video"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Instant or scheduled sessions",
+        "text": "Expert presence updates live. Clients can start a session immediately (the expert has 30 seconds to accept) or book a slot from the expert's availability calendar. A scheduler auto-starts booked sessions on time, in the Europe/Rome timezone.",
+        "image": "/images/projects/rivelya/experts.webp",
+        "alt": "Rivelya expert directory with online status, ratings and channels",
+        "width": 868,
+        "height": 545
+      },
+      {
+        "title": "Chat, voice and video in one place",
+        "text": "Socket.io powers chat, typing indicators, presence and call signalling. Voice and video run on a self-hosted LiveKit server with a TURN relay, with Twilio as a phone fallback. A live countdown shows each client exactly how much time is left.",
+        "image": "/images/projects/rivelya/expert-profile.webp",
+        "alt": "Rivelya expert profile with Start now button, reviews and channel options",
+        "width": 903,
+        "height": 503
+      },
+      {
+        "title": "Wallet and per-minute billing that can't drift",
+        "text": "Stripe Payment Intents with verified webhooks top up a prepaid wallet held in integer cents. Every balance change runs in an atomic MongoDB transaction with idempotent payment handling, and negative balances are blocked. Expert earnings sit on a 7-day hold before they become withdrawable.",
+        "image": "/images/projects/rivelya/journey-10.webp",
+        "alt": "Rivelya booking management showing a confirmed €19 session",
+        "width": 1133,
+        "height": 685
+      },
+      {
+        "title": "Expert and admin consoles",
+        "text": "Invite-only expert onboarding with availability, rates, earnings and withdrawal requests. The admin console has an OTP login and covers commission per expert, payouts, CMS and blog, testimonials and promotional email campaigns.",
+        "image": "/images/projects/rivelya/journey-12.webp",
+        "alt": "Rivelya live session room with conversation list and timer",
+        "width": 1125,
+        "height": 717
+      }
+    ],
+    "journey": [
+      {
+        "image": "/images/projects/rivelya/journey-01.webp",
+        "title": "Start a consultation",
+        "caption": "Start right away or book a time. The flow guides the client step by step."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-02.webp",
+        "title": "Sign in",
+        "caption": "Email and password, or Google sign-in, with phone verification before the first booking."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-03.webp",
+        "title": "Open the expert directory",
+        "caption": "The Experts menu lists everyone who is available right now."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-04.webp",
+        "title": "Choose an expert",
+        "caption": "Clients compare ratings, specialities and channels, then open the profile."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-05.webp",
+        "title": "Start now",
+        "caption": "One click on Start now. It's the fastest way to talk to an online expert."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-06.webp",
+        "title": "Or pick a day and time",
+        "caption": "Date, time slot and channel. Price and duration are calculated live."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-07.webp",
+        "title": "Booking sent",
+        "caption": "The request goes to the expert, and the amount is charged upfront."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-08.webp",
+        "title": "Track the booking",
+        "caption": "Booking management shows whether the expert has accepted."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-09.webp",
+        "title": "Awaiting confirmation",
+        "caption": "If the expert rejects, the client is refunded automatically."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-10.webp",
+        "title": "Booking confirmed",
+        "caption": "A real-time notification arrives as soon as the expert accepts."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-11.webp",
+        "title": "Join the session",
+        "caption": "At the scheduled time, the client joins by chat, chat and voice, call or video."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-12.webp",
+        "title": "Session in progress",
+        "caption": "A server-controlled countdown shows the time remaining."
+      },
+      {
+        "image": "/images/projects/rivelya/journey-13.webp",
+        "title": "Rate the session",
+        "caption": "After the session, the client leaves a rating that feeds the expert's stats."
+      }
+    ],
+    "architecture": [
+      {
+        "layer": "Client",
+        "items": [
+          "React SPA for clients, experts and admins",
+          "Socket.io client",
+          "LiveKit client",
+          "Stripe Elements"
+        ]
+      },
+      {
+        "layer": "Edge",
+        "items": [
+          "Nginx on AWS EC2",
+          "HTTPS",
+          "Static build + /api & websocket proxy"
+        ]
+      },
+      {
+        "layer": "Application",
+        "items": [
+          "Express REST API",
+          "Socket.io realtime hub",
+          "Cron session scheduler & metering",
+          "PM2 process manager"
+        ]
+      },
+      {
+        "layer": "Data & services",
+        "items": [
+          "MongoDB Atlas (transactions)",
+          "AWS S3 media",
+          "Stripe",
+          "LiveKit SFU + TURN",
+          "Twilio Verify",
+          "Resend email",
+          "Groq / Gemini assistant"
+        ]
+      }
+    ],
+    "engineering": [
+      "The server is the source of truth for billing: cron jobs start, meter and end sessions, and timers in the browser are display-only.",
+      "Payments are protected against duplicates with a unique index on the payment intent, a check before processing and atomic transactions.",
+      "Security: Helmet headers, rate limiting, verified Stripe webhooks, OTP admin sessions, KYC middleware and no direct S3 URLs.",
+      "GDPR: cookie consent, account deletion with OTP confirmation, and media served through an authenticated proxy with WebP conversion.",
+      "Push-to-deploy CI/CD with GitHub Actions: SSH, install, build and restart PM2 with no downtime.",
+      "Built-in AI support assistant using Groq Llama 3.1, with Gemini as a fallback."
+    ],
+    "stack": {
+      "Frontend": [
+        "React 18",
+        "Vite",
+        "TanStack Query",
+        "Tailwind CSS",
+        "Socket.io client",
+        "LiveKit client"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "node-cron",
+        "Joi"
+      ],
+      "Data": [
+        "MongoDB Atlas",
+        "Mongoose",
+        "AWS S3"
+      ],
+      "Integrations": [
+        "Stripe",
+        "LiveKit (WebRTC)",
+        "Twilio",
+        "Resend",
+        "Google OAuth",
+        "Groq / Gemini"
+      ],
+      "Infrastructure": [
+        "AWS EC2",
+        "Nginx",
+        "PM2",
+        "GitHub Actions"
+      ]
+    },
+    "gallery": [],
+    "ogImage": "/images/og/rivelya.jpg"
+  },
+  {
+    "slug": "cover-me-lien-services",
+    "title": "Cover Me Lien Services",
+    "client": "CoverM Enterprise, LLC · California, USA",
+    "category": "SaaS",
+    "tags": [
+      "Legal-tech",
+      "Payments",
+      "Client portal"
+    ],
+    "year": "2026",
+    "timeline": "Mar 2026 – Oct 2026",
+    "role": "Solo full-stack developer: UX, frontend, backend, infrastructure & DevOps",
+    "liveUrl": "https://covermelienservices.com",
+    "accent": "#f26b2a",
+    "tagline": "A lien-compliance platform that helps California contractors protect their right to get paid.",
+    "summary": "Construction-lien document preparation and deadline tracking for contractors, subcontractors, suppliers and law firms, with online intake, payments, a client portal and an admin back office.",
+    "cover": "/images/projects/cover-me-lien-services/thumb.webp",
+    "coverAlt": "Cover Me Lien Services homepage hero",
+    "hero": "/images/projects/cover-me-lien-services/hero.webp",
+    "video": {
+      "mp4": "/videos/cover-me-lien-services.mp4",
+      "poster": "/videos/cover-me-lien-services-poster.webp"
+    },
+    "mobile": "/images/projects/cover-me-lien-services/mobile.webp",
+    "challenge": "In California construction, one missed statutory deadline can cost a contractor their lien rights, and the payment that comes with them. The client was taking orders by phone and email, working out deadlines by hand and chasing documents across inboxes. They needed a compliant self-service platform that could quote, take payment and collect documents, and give their team one place to run every case.",
+    "solution": "I designed and built the whole product. It has a Next.js marketing site with California lien-law resources and a free deadline calculator, plus a multi-step intake with server-side pricing and Stripe Checkout. Clients get a secure portal for uploads and requests, and the team gets an admin back office to run each case. It's all deployed on a hardened Linux server with automated CI/CD.",
+    "metrics": [
+      {
+        "value": "~40",
+        "label": "API endpoints"
+      },
+      {
+        "value": "9",
+        "label": "Data models"
+      },
+      {
+        "value": "13",
+        "label": "Automated email flows"
+      },
+      {
+        "value": "7 mo",
+        "label": "Concept to production"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Free deadline calculator",
+        "text": "Five quick questions give state-specific lien deadlines in under a minute. The engine applies the earliest rule that matches and skips weekends. It's also the site's strongest lead magnet.",
+        "image": "/images/projects/cover-me-lien-services/deadline-calculator.webp",
+        "alt": "Deadline calculator with five steps: state, project type, role, who hired you and last day on job",
+        "width": 1592,
+        "height": 810
+      },
+      {
+        "title": "Guided intake and Stripe checkout",
+        "text": "A three-step intake covers the request, the project and the signature. Pricing is calculated on the server (self-service vs full-service, plus a rush option) and paid through Stripe Checkout with signed, idempotent webhooks. Clients can resume an unpaid request at any time.",
+        "image": "/images/projects/cover-me-lien-services/intake-checkout.webp",
+        "alt": "Intake form with service selection, service levels and secure checkout summary",
+        "width": 1182,
+        "height": 839
+      },
+      {
+        "title": "Secure client portal",
+        "text": "Clients track every request, answer document and signature requests, and upload files straight to private, encrypted storage through presigned URLs. Each upload is checked with a checksum and verified by its file signature.",
+        "image": "/images/projects/cover-me-lien-services/client-dashboard.webp",
+        "alt": "Client request center showing request totals, actions needed and membership status",
+        "width": 1563,
+        "height": 916
+      },
+      {
+        "title": "Attorney partner programme",
+        "text": "A dedicated area for construction-law firms, with partnership packages and an inquiry pipeline, so attorneys can outsource lien paperwork with confidence.",
+        "image": "/images/projects/cover-me-lien-services/attorney-partners.webp",
+        "alt": "Attorney partnerships page: reliable, construction-focused lien support for law firms",
+        "width": 1600,
+        "height": 827
+      }
+    ],
+    "journey": [],
+    "architecture": [
+      {
+        "layer": "Client",
+        "items": [
+          "Browser",
+          "Cloudflare DNS, proxy & Turnstile"
+        ]
+      },
+      {
+        "layer": "Edge",
+        "items": [
+          "Nginx reverse proxy",
+          "Let's Encrypt TLS"
+        ]
+      },
+      {
+        "layer": "Application",
+        "items": [
+          "Next.js 15 (SSR)",
+          "Express API /api/v1",
+          "PDF document worker",
+          "PM2"
+        ]
+      },
+      {
+        "layer": "Data & services",
+        "items": [
+          "MongoDB Atlas",
+          "Private S3-compatible storage",
+          "Stripe Checkout",
+          "Resend email",
+          "AWS SQS"
+        ]
+      }
+    ],
+    "engineering": [
+      "JWT in httpOnly cookies with role-based access for clients and admins.",
+      "Per-route rate limits, NoSQL-injection and HTTP parameter pollution protection, and an exact-match CORS allowlist.",
+      "Uploads are SHA-256 checksummed and verified by file signature (magic bytes). Downloads use 60-second signed URLs, issued only after an ownership check.",
+      "Stripe webhooks are signature-verified and deduplicated through a stored event log.",
+      "SMS consent is stored separately from service terms, with a full audit history, and the site carries clear legal disclaimers that it is not a law firm (UPL compliance).",
+      "SEO: canonical URLs, Open Graph, JSON-LD and a generated sitemap. The CI/CD pipeline checks environment values before every deploy."
+    ],
+    "stack": {
+      "Frontend": [
+        "Next.js 15",
+        "React 18",
+        "SCSS",
+        "Bootstrap 5",
+        "react-simple-maps"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "express-validator",
+        "Helmet",
+        "PDFKit"
+      ],
+      "Data": [
+        "MongoDB Atlas",
+        "Mongoose",
+        "S3-compatible storage",
+        "AWS SQS"
+      ],
+      "Integrations": [
+        "Stripe Checkout",
+        "Resend",
+        "Cloudflare Turnstile"
+      ],
+      "Infrastructure": [
+        "Linux VPS",
+        "Nginx",
+        "PM2",
+        "Cloudflare",
+        "GitHub Actions",
+        "CloudFormation"
+      ]
+    },
+    "gallery": [
+      {
+        "src": "/images/projects/cover-me-lien-services/hero.webp",
+        "alt": "Homepage: California construction lien services"
+      },
+      {
+        "src": "/images/projects/cover-me-lien-services/how-it-works.webp",
+        "alt": "How it works: deadline-driven lien workflows"
+      },
+      {
+        "src": "/images/projects/cover-me-lien-services/attorney-services.webp",
+        "alt": "Support services for construction attorneys"
+      },
+      {
+        "src": "/images/projects/cover-me-lien-services/intake-start.webp",
+        "alt": "Start a California lien service request"
+      },
+      {
+        "src": "/images/projects/cover-me-lien-services/intake-contact.webp",
+        "alt": "Intake request contact form"
+      },
+      {
+        "src": "/images/projects/cover-me-lien-services/about.webp",
+        "alt": "About Cover Me Lien Services"
+      }
+    ],
+    "ogImage": "/images/og/cover-me-lien-services.jpg"
+  },
+  {
+    "slug": "tenant-certification",
+    "title": "Tenant Certification",
+    "client": "Stellar Properties Certification, LLC · USA",
+    "category": "EdTech",
+    "tags": [
+      "PropTech",
+      "Certification",
+      "Modernization"
+    ],
+    "year": "2025–2026",
+    "timeline": "Oct 2025 – present",
+    "role": "Lead & sole developer: took over a legacy platform; modernization, new features, payments & infrastructure",
+    "liveUrl": "https://tenantcertification.online",
+    "accent": "#3b82c4",
+    "tagline": "A national certification platform that turns renters into verified, trusted tenants.",
+    "summary": "Training, verified records and a portable digital credential that help tenants prove they're ready, and help landlords, relocation teams and lenders trust them.",
+    "cover": "/images/projects/tenant-certification/thumb.webp",
+    "coverAlt": "Tenant Certification homepage: the national standard for tenant and landlord excellence",
+    "hero": "/images/projects/tenant-certification/hero.webp",
+    "video": {
+      "mp4": "/videos/tenant-certification.mp4",
+      "poster": "/videos/tenant-certification-poster.webp"
+    },
+    "mobile": "/images/projects/tenant-certification/mobile.webp",
+    "challenge": "Landlords judge applicants on little more than a credit score, and good renters have no way to prove they're prepared. Stellar Properties had the idea of certifying tenants through training and verified records, but their platform was ageing and had been built by earlier teams. They needed one developer to own it: stabilise and modernise it, connect payments and course delivery, and keep it running in production.",
+    "solution": "I took over the codebase in October 2025 and have shipped 440+ commits since, as its only developer. That work includes a redesigned marketing site, a paid-access flow with verified Stripe webhooks and automatic certificate and wallet-card issuance when a course is completed. It also covers the tenant Credibility Kit and Timeline, an admin payment-review queue, security hardening and a push-to-deploy CI/CD pipeline.",
+    "metrics": [
+      {
+        "value": "440+",
+        "label": "Commits as sole developer"
+      },
+      {
+        "value": "260+",
+        "label": "API endpoints maintained"
+      },
+      {
+        "value": "45",
+        "label": "Data models"
+      },
+      {
+        "value": "140+",
+        "label": "Application routes"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Certification academy",
+        "text": "A structured course path covering budgeting, credibility, legal basics, maintenance and rental search. CustomerHub delivers the courses, and its completion webhook (protected with a constant-time token check) triggers certification automatically.",
+        "image": "/images/projects/tenant-certification/course-curriculum.webp",
+        "alt": "Courses to complete for certification: introduction, credibility kit, budgeting, legal, maintenance and more",
+        "width": 1352,
+        "height": 865
+      },
+      {
+        "title": "The Stellar Credential",
+        "text": "Graduates receive a digital certificate and wallet card issued through the Certifier API. A built-in diagnostics self-test and a retry path make sure no certificate is ever lost.",
+        "image": "/images/projects/tenant-certification/stellar-credential.webp",
+        "alt": "Certificate of Stewardship and wallet card: stop being a risk and start being a result",
+        "width": 1172,
+        "height": 621
+      },
+      {
+        "title": "Credibility Kit and Rental Passport",
+        "text": "Tenants build a verified Credibility Kit: documents uploaded to private object storage (with size limits and scanning), a rental Timeline, references and reports. All of it can be shared as a single Rental Passport.",
+        "image": "/images/projects/tenant-certification/train-verify-connect.webp",
+        "alt": "Train, verify, connect: the three steps of the certification journey",
+        "width": 1143,
+        "height": 761
+      },
+      {
+        "title": "Payments and access control",
+        "text": "Stripe webhooks are verified by hand with HMAC-SHA256 and processed exactly once. Refunds and disputes suspend access automatically, and payments that can't be matched go to an admin review queue instead of getting lost.",
+        "image": "/images/projects/tenant-certification/choose-version.webp",
+        "alt": "Choose your version: professional steward, Stellar landlord or corporate relocator",
+        "width": 1272,
+        "height": 815
+      }
+    ],
+    "journey": [],
+    "architecture": [
+      {
+        "layer": "Client",
+        "items": [
+          "Vue SPA for tenants, landlords, organisations and admins"
+        ]
+      },
+      {
+        "layer": "Edge",
+        "items": [
+          "Nginx: static SPA + /api proxy",
+          "Strict CSP & security headers"
+        ]
+      },
+      {
+        "layer": "Application",
+        "items": [
+          "Express API (PM2)",
+          "Webhook handlers: Stripe & CustomerHub",
+          "Email templating"
+        ]
+      },
+      {
+        "layer": "Data & services",
+        "items": [
+          "MySQL (Sequelize, 74 migrations)",
+          "DigitalOcean Spaces",
+          "Stripe",
+          "CustomerHub",
+          "Certifier",
+          "Mailgun",
+          "Kit"
+        ]
+      }
+    ],
+    "engineering": [
+      "Took over a 2021 codebase and modernized it while it stayed live, with no big-bang rewrite.",
+      "Stripe signatures are verified by hand with timingSafeEqual, and events are stored idempotently in a dedicated table.",
+      "A self-test endpoint checks CustomerHub, Certifier and the database without writing anything, which makes production issues quick to diagnose.",
+      "Hardening: strict CORS allowlist, CSP, X-Frame-Options, nosniff, an allowlist of document hosts and a size cap on downloads.",
+      "Tightened password handling so profile edits never store blank or plain-text passwords.",
+      "One-push deploys: GitHub Actions builds both apps, runs migrations, restarts PM2 and reloads Nginx."
+    ],
+    "stack": {
+      "Frontend": [
+        "Vue 2",
+        "Vuetify",
+        "Vuex",
+        "Webpack",
+        "SCSS"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "Passport JWT",
+        "Joi",
+        "Winston"
+      ],
+      "Data": [
+        "MySQL",
+        "Sequelize",
+        "DigitalOcean Spaces"
+      ],
+      "Integrations": [
+        "Stripe",
+        "CustomerHub",
+        "Certifier",
+        "Mailgun",
+        "Kit (ConvertKit)",
+        "PDFKit"
+      ],
+      "Infrastructure": [
+        "Ubuntu VPS",
+        "Nginx",
+        "PM2",
+        "GitHub Actions"
+      ]
+    },
+    "gallery": [
+      {
+        "src": "/images/projects/tenant-certification/hero.webp",
+        "alt": "Homepage: the national standard for tenant & landlord excellence"
+      },
+      {
+        "src": "/images/projects/tenant-certification/mission.webp",
+        "alt": "Mission, vision & strategy"
+      },
+      {
+        "src": "/images/projects/tenant-certification/why-certification.webp",
+        "alt": "Why certification is important, with tenant personas"
+      },
+      {
+        "src": "/images/projects/tenant-certification/win-win-dashboard.webp",
+        "alt": "The win-win dashboard for tenants and landlords"
+      },
+      {
+        "src": "/images/projects/tenant-certification/what-is-certification.webp",
+        "alt": "What is certification? The Stellar Credential"
+      },
+      {
+        "src": "/images/projects/tenant-certification/shared-responsibility.webp",
+        "alt": "A trusted platform depends on shared responsibility"
+      }
+    ],
+    "ogImage": "/images/og/tenant-certification.jpg"
+  },
+  {
+    "slug": "grand-hotel-selinunte",
+    "title": "Grand Hotel Selinunte",
+    "client": "Grand Hotel Selinunte · Sicily, Italy",
+    "category": "Hospitality",
+    "tags": [
+      "Website",
+      "AI chat",
+      "Internal tools"
+    ],
+    "year": "2024–2025",
+    "timeline": "2024 – 2025",
+    "role": "Full-stack developer: website, AI guest support & internal tools",
+    "liveUrl": "https://grandhotelselinunte.com",
+    "accent": "#c9a45c",
+    "tagline": "Hotel website, AI guest-support chat with WhatsApp, and internal finance tools.",
+    "summary": "The official website of a seafront hotel in Sicily, plus an AI chat assistant that answers guests on the web and WhatsApp, and in-house tools that automate quotes and receipts.",
+    "cover": "/images/projects/grand-hotel-selinunte/thumb.webp",
+    "coverAlt": "Grand Hotel Selinunte website homepage",
+    "hero": "/images/projects/grand-hotel-selinunte/hero.webp",
+    "video": {
+      "mp4": "/videos/grand-hotel-selinunte.mp4",
+      "poster": "/videos/grand-hotel-selinunte-poster.webp"
+    },
+    "mobile": "/images/projects/grand-hotel-selinunte/mobile.webp",
+    "challenge": "An international hotel gets the same guest questions all day, in several languages, across the website and WhatsApp, while the front office was still building quotes and receipts by hand. The hotel needed a modern website that converts, round-the-clock answers for guests and less manual admin work.",
+    "solution": "I built and deployed the official website with a custom React frontend and a fully responsive booking journey. I then added an AI chat support system connected to WhatsApp for multilingual guest questions, plus internal tools that generate PDF quotes and receipts and calculate stay costs automatically.",
+    "metrics": [
+      {
+        "value": "3",
+        "label": "Products delivered"
+      },
+      {
+        "value": "24/7",
+        "label": "AI guest support"
+      },
+      {
+        "value": "2",
+        "label": "Support channels: web & WhatsApp"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Website and booking journey",
+        "text": "A fast, fully responsive website with a custom React frontend, designed to turn visitors into direct bookings. It's deployed on AWS behind Nginx with SSL.",
+        "image": "/images/projects/grand-hotel-selinunte/rooms-dining.webp",
+        "alt": "Rooms with a view and Sicilian dining sections of the hotel website",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "title": "AI chat support with WhatsApp",
+        "text": "An AI assistant answers guest questions about rooms, services and bookings in several languages, on the website and over WhatsApp, around the clock.",
+        "image": null,
+        "alt": ""
+      },
+      {
+        "title": "Internal finance tools",
+        "text": "A cost calculator, a PDF quote generator and a receipt generator. Together they cut manual formatting and speed up replies to guests.",
+        "image": null,
+        "alt": ""
+      }
+    ],
+    "journey": [],
+    "architecture": [
+      {
+        "layer": "Client",
+        "items": [
+          "Website (React)",
+          "WhatsApp"
+        ]
+      },
+      {
+        "layer": "Edge",
+        "items": [
+          "Nginx on AWS",
+          "SSL"
+        ]
+      },
+      {
+        "layer": "Application",
+        "items": [
+          "Node.js API",
+          "AI chat service",
+          "PDF & receipt tools"
+        ]
+      }
+    ],
+    "engineering": [
+      "Production deployment on AWS virtual machines behind Nginx with SSL.",
+      "Responsive, SEO-friendly pages built for hospitality search terms.",
+      "AI assistant tuned to the hotel's own information, available on the web and on WhatsApp."
+    ],
+    "stack": {
+      "Frontend": [
+        "React",
+        "Responsive UI"
+      ],
+      "Backend": [
+        "Node.js",
+        "PDF generation"
+      ],
+      "AI & messaging": [
+        "LLM chat assistant",
+        "WhatsApp integration"
+      ],
+      "Infrastructure": [
+        "AWS",
+        "Nginx",
+        "SSL"
+      ]
+    },
+    "gallery": [
+      {
+        "src": "/images/projects/grand-hotel-selinunte/hero.webp",
+        "alt": "Homepage hero with the hotel pool and countryside view"
+      },
+      {
+        "src": "/images/projects/grand-hotel-selinunte/intro.webp",
+        "alt": "Luxury living introduction section"
+      },
+      {
+        "src": "/images/projects/grand-hotel-selinunte/rooms-dining.webp",
+        "alt": "Rooms with a view and Sicilian dining sections"
+      },
+      {
+        "src": "/images/projects/grand-hotel-selinunte/pool.webp",
+        "alt": "Pool, sea and services section"
+      }
+    ],
+    "ogImage": "/images/og/grand-hotel-selinunte.jpg"
+  }
+]
