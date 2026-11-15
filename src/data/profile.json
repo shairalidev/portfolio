@@ -28,7 +28,7 @@
   "socials": [
     { "label": "GitHub", "icon": "mdi:github", "url": "https://github.com/shairalidev" },
     { "label": "LinkedIn", "icon": "mdi:linkedin", "url": "https://www.linkedin.com/in/shairali2" },
-    { "label": "Fiverr", "icon": "simple-icons:fiverr", "url": "https://www.fiverr.com/s/EmryR77" },
+    { "label": "Fiverr", "icon": "simple-icons:fiverr", "url": "https://www.fiverr.com/devshair" },
     { "label": "X (Twitter)", "icon": "simple-icons:x", "url": "https://x.com/AliShair45057" }
   ]
 }
