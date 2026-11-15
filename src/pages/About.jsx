@@ -109,7 +109,7 @@ const About = () => (
             <figcaption>
               <strong><Icon icon="solar:cup-star-linear" aria-hidden="true" />{award.title}</strong>
               <span>{award.event} · Riphah School of Computing & Innovation</span>
-              <Link to="/credentials" className="link-arrow">
+              <Link to="/achievements" className="link-arrow">
                 Degree, award & {references.length} reference letters <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
               </Link>
             </figcaption>

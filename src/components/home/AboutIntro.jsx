@@ -3,6 +3,7 @@ import Reveal from '../ui/Reveal';
 import TiltCard from '../ui/TiltCard';
 import Button from '../ui/Button';
 import { credentials, profile } from '../../lib/content';
+import fiverr from '../../data/fiverr.json';
 
 const { award, degree, references } = credentials;
 
@@ -23,13 +24,14 @@ const AboutIntro = () => (
         <h2 className="section-header__title">Hi, I&apos;m Shair: one developer, accountable from the first call to launch day.</h2>
         <p className="intro__lead">{profile.bio[0]}</p>
         <ul className="intro__creds">
+          <li><Icon icon="solar:star-bold" aria-hidden="true" />Fiverr {fiverr.level} · {fiverr.stats[0].value} from {fiverr.stats[1].value} client reviews</li>
           <li><Icon icon="solar:square-academic-cap-linear" aria-hidden="true" />{degree.title} · CGPA {degree.cgpa}</li>
           <li><Icon icon="solar:cup-star-linear" aria-hidden="true" />{award.title}, {award.event}</li>
           <li><Icon icon="solar:letter-linear" aria-hidden="true" />Reference letters from {references.length} professors</li>
         </ul>
         <div className="hero__actions">
           <Button to="/about" icon="solar:arrow-right-linear">More about me</Button>
-          <Button to="/credentials" variant="outline">Education & references</Button>
+          <Button to="/achievements" variant="outline">Achievements & reviews</Button>
         </div>
       </Reveal>
     </div>

@@ -24,7 +24,7 @@ const routes = [
   ['/about', 'about.html'],
   ['/services', 'services.html'],
   ['/contact', 'contact.html'],
-  ['/credentials', 'credentials.html'],
+  ['/achievements', 'achievements.html'],
   ...projects.map((p) => [`/work/${p.slug}`, `work/${p.slug}.html`]),
   ['/__not-found__', '404.html'],
 ];

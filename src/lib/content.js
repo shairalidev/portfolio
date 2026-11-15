@@ -10,7 +10,7 @@ export const NAV_LINKS = [
   { to: '/work', label: 'Work' },
   { to: '/services', label: 'Services' },
   { to: '/about', label: 'About' },
-  { to: '/credentials', label: 'Credentials' },
+  { to: '/achievements', label: 'Achievements' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -60,7 +60,7 @@ export const personJsonLd = () => ({
     credentialCategory: 'degree',
     educationalLevel: 'Bachelor',
     recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Riphah International University' },
-    url: absoluteUrl('/credentials'),
+    url: absoluteUrl('/achievements'),
   },
   knowsAbout: [
     'Full-stack web development',

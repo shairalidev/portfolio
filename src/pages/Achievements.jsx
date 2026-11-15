@@ -6,6 +6,7 @@ import SectionHeader from '../components/ui/SectionHeader';
 import Button from '../components/ui/Button';
 import CtaBand from '../components/ui/CtaBand';
 import { SITE_URL, absoluteUrl, credentials, personJsonLd, profile } from '../lib/content';
+import fiverr from '../data/fiverr.json';
 
 const { award, degree, references, documents } = credentials;
 
@@ -13,8 +14,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
-    url: absoluteUrl('/credentials'),
-    name: `Education, award & references | ${profile.name}`,
+    url: absoluteUrl('/achievements'),
+    name: `Achievements | ${profile.name}`,
     mainEntity: personJsonLd(),
   },
   {
@@ -50,21 +51,69 @@ const jsonLd = [
   },
 ];
 
-const Credentials = () => (
+const formatDate = (iso) =>
+  new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+const Achievements = () => (
   <>
     <Seo
-      title="Education, award & references"
-      description={`${profile.name}: BS Computer Science (CGPA ${degree.cgpa}) from Riphah International University, ${award.title.toLowerCase()} at the ${award.event}, and reference letters from three professors.`}
-      path="/credentials"
+      title="Achievements: Fiverr reviews, award & education"
+      description={`${profile.name}: Fiverr ${fiverr.level} rated ${fiverr.stats[0].value} by repeat clients in the USA and Europe, ${award.title.toLowerCase()} at the ${award.event}, and a BS Computer Science (CGPA ${degree.cgpa}).`}
+      path="/achievements"
       image={award.imageJpg}
       jsonLd={jsonLd}
     />
 
     <PageHeader
-      eyebrow="Credentials"
-      title="Education, recognition and references"
-      text="The academic side of my work: the degree behind the code, the award I received for it, and what my professors wrote about me. Every document is available to read."
+      eyebrow="Achievements"
+      title="Track record, recognition and references"
+      text="What clients say after working with me on Fiverr, the award I received at university, and the degree and professors behind it. Everything here links to its source."
     />
+
+    <section className="section section--tight">
+      <div className="container">
+        <Reveal className="fiverr-record">
+          <div className="fiverr-record__head">
+            <div>
+              <p className="eyebrow">Freelance on Fiverr</p>
+              <h2>
+                <span className="fiverr-record__brand">Fiverr</span> {fiverr.level}
+              </h2>
+              <p className="fiverr-record__summary">{fiverr.summary}</p>
+            </div>
+            <Button href={fiverr.url} variant="outline" icon="solar:arrow-right-up-linear">
+              View my Fiverr profile
+            </Button>
+          </div>
+          <dl className="fiverr-record__stats">
+            {fiverr.stats.map((s) => (
+              <div key={s.label}>
+                <dt>{s.label}</dt>
+                <dd>{s.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+
+        <div className="fiverr-reviews">
+          {fiverr.reviews.map((r, i) => (
+            <Reveal as="figure" key={`${r.client}-${r.date}`} delay={(i % 3) * 90} className="testimonial">
+              <div className="testimonial__stars" role="img" aria-label={`${r.rating} out of 5 stars`}>
+                {Array.from({ length: Math.round(r.rating) }).map((_, s) => <Icon key={s} icon="solar:star-bold" aria-hidden="true" />)}
+              </div>
+              <blockquote>“{r.text}”</blockquote>
+              <figcaption>
+                <span className="testimonial__avatar" aria-hidden="true">{r.client.charAt(0)}</span>
+                <span>
+                  <strong>Client from {r.country}</strong>
+                  <small>Fiverr review · {formatDate(r.date)} · {r.repeat}</small>
+                </span>
+              </figcaption>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <section className="section section--tight">
       <div className="container">
@@ -146,4 +195,4 @@ const Credentials = () => (
   </>
 );
 
-export default Credentials;
+export default Achievements;

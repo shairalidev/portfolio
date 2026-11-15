@@ -1,0 +1,63 @@
+{
+  "username": "devshair",
+  "url": "https://www.fiverr.com/devshair",
+  "level": "Level 1 Seller",
+  "updated": "2026-11-15",
+  "stats": [
+    { "value": "4.9★", "label": "Average rating on Fiverr" },
+    { "value": "12", "label": "Client reviews" },
+    { "value": "22+", "label": "Orders delivered" },
+    { "value": "3–4×", "label": "Repeat orders from the same clients" }
+  ],
+  "summary": "Most of my Fiverr work is long-running: founders and small businesses in the USA and Austria who hired me for one job and came back for the next three or four. Every review below is quoted from my Fiverr profile; longer ones are shortened.",
+  "reviews": [
+    {
+      "client": "K.",
+      "country": "United States",
+      "date": "2026-11-04",
+      "rating": 5,
+      "repeat": "4 orders",
+      "text": "I would be surprised if you find anyone more competent, intelligent, kind, and capable of doing all that was needed for my website. You have no need to look any further. Shair is the real deal!"
+    },
+    {
+      "client": "P.",
+      "country": "United States",
+      "date": "2025-09-07",
+      "rating": 5,
+      "repeat": "4 orders",
+      "text": "He took on a project without seeing what he had to work with and successfully completed it under limited information from me because I am not a programmer. He went out of his way to communicate and explain what I did not understand and has set us up to work together in the future."
+    },
+    {
+      "client": "M.",
+      "country": "Austria",
+      "date": "2026-01-17",
+      "rating": 5,
+      "repeat": "3 orders",
+      "text": "Built the perfect platform for my barber booking tool."
+    },
+    {
+      "client": "K.",
+      "country": "United States",
+      "date": "2026-06-03",
+      "rating": 5,
+      "repeat": "4 orders",
+      "text": "What sets him apart is his ability to listen carefully, understand the needs of individuals with limited technical or programming knowledge, and translate those needs into practical, effective solutions."
+    },
+    {
+      "client": "P.",
+      "country": "United States",
+      "date": "2025-11-25",
+      "rating": 5,
+      "repeat": "4 orders",
+      "text": "We had old issues he diligently cleaned up while moving our software toward a launch date. He finished version 7 and we are testing. Finishing is always a problem. His credibility is great with us."
+    },
+    {
+      "client": "M.",
+      "country": "Austria",
+      "date": "2026-02-13",
+      "rating": 5,
+      "repeat": "3 orders",
+      "text": "Exceptional work again. Building the next platform with him."
+    }
+  ]
+}

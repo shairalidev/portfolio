@@ -22,7 +22,7 @@ No test framework is configured. Deployed on Cloudflare Pages via `.github/workf
 
 **Stack:** React 18 + Vite 4, JavaScript/JSX, SCSS (no Bootstrap), React Router v6, react-helmet-async, three.js via @react-three/fiber (lazy-loaded), Lenis smooth scroll, Iconify icons.
 
-**Routes** (`src/App.jsx`, all inside `components/layout/Layout.jsx`): `/` Home · `/work` · `/work/:slug` case study · `/about` · `/services` · `/contact` · `/credentials` (degree, award, reference letters) · `*` 404. Old `/project/:slug` links redirect to `/work/:slug`. All pages except Home are lazy-loaded.
+**Routes** (`src/App.jsx`, all inside `components/layout/Layout.jsx`): `/` Home · `/work` · `/work/:slug` case study · `/about` · `/services` · `/contact` · `/achievements` (Fiverr record + reviews, award, degree, reference letters; `/credentials` redirects here) · `*` 404. Old `/project/:slug` links redirect to `/work/:slug`. All pages except Home are lazy-loaded.
 
 **Content lives in `src/data/*.json`** (never hard-code content in components):
 | File | Contents |
@@ -34,6 +34,7 @@ No test framework is configured. Deployed on Cloudflare Pages via `.github/workf
 | `skills.json` | Grouped tech stack (Iconify icon names) |
 | `testimonials.json` | Client reviews |
 | `credentials.json` | Award, degree, professor references (quotes + PDF links), downloadable documents |
+| `fiverr.json` | Fiverr level, stats and selected reviews (quoted from fiverr.com/devshair) |
 
 `src/lib/content.js` exposes helpers (`getProject`, `whatsappUrl`, `absoluteUrl`, `personJsonLd`).
 
