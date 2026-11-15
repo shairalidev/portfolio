@@ -79,7 +79,8 @@
     height: 100%;
     object-fit: cover;
     object-position: center bottom;
-    transform: translateZ(40px) scale(1.25);
+    // Slightly under 1 so the hair keeps some headroom instead of being cropped.
+    transform: translateZ(40px) scale(0.94);
     transform-origin: bottom center;
   }
 
