@@ -7,13 +7,17 @@ import ServicesGrid from '../components/sections/ServicesGrid';
 import ProcessSteps from '../components/sections/ProcessSteps';
 import Faq from '../components/sections/Faq';
 import { SITE_URL, absoluteUrl, faqJsonLd } from '../lib/content';
+import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
+import Reveal from '../components/ui/Reveal';
 import { services } from '../data/services.json';
+import servicePages from '../data/service-pages.json';
 
 const Services = () => (
   <>
     <Seo
-      title="Services"
-      description="Full-stack development services: SaaS and web platforms, Stripe payments and billing, real-time chat and video, AI assistants, cloud deployment and legacy modernization."
+      title="Full-Stack & AI Development Services | Shair Ali"
+      description="Hire Shair Ali for SaaS builds, AI app rescue, AI chatbots and automation, Stripe payments, real-time video apps and deployment to AWS or your own server."
       path="/services"
       jsonLd={[
         {
@@ -55,6 +59,28 @@ const Services = () => (
     </section>
 
     <section className="section section--alt">
+      <div className="container">
+        <SectionHeader
+          eyebrow="Most requested"
+          title="Specialist services"
+          text="The jobs clients hire me for most often right now, each with real projects behind it."
+        />
+        <div className="specialist-grid">
+          {servicePages.map((p, i) => (
+            <Reveal key={p.slug} delay={(i % 3) * 90}>
+              <Link to={`/services/${p.slug}`} className="specialist-card">
+                <span className="service-card__icon"><Icon icon={p.icon} aria-hidden="true" /></span>
+                <strong>{p.title}</strong>
+                <span>{p.description.replace(/^Shair Ali /, '').replace(/^./, (c) => c.toUpperCase())}</span>
+                <span className="link-arrow">Learn more <Icon icon="solar:arrow-right-linear" aria-hidden="true" /></span>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="section">
       <div className="container">
         <SectionHeader eyebrow="Process" title="How a project runs" text="Predictable steps, weekly progress and no surprises." />
         <ProcessSteps />

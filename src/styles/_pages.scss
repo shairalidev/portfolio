@@ -730,3 +730,183 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ---------- Service landing pages ---------- */
+.service-detail {
+  align-items: stretch;
+
+  &__card {
+    height: 100%;
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--surface);
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 20px;
+
+      svg {
+        color: var(--text-muted);
+      }
+    }
+
+    &--accent {
+      border-color: rgba(254, 197, 68, 0.3);
+
+      h2 svg {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-muted);
+
+    li::marker {
+      color: var(--text-dim);
+    }
+  }
+}
+
+.service-proof {
+  display: grid;
+  gap: 20px;
+
+  @include up($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__card {
+    display: grid;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: border-color 0.25s;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    @include hover {
+      border-color: var(--border-strong);
+    }
+  }
+
+  &__body {
+    display: grid;
+    gap: 8px;
+    align-content: start;
+    padding: 22px 24px 26px;
+
+    strong {
+      font-size: 18px;
+    }
+
+    > span:not(.link-arrow) {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .link-arrow {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+  }
+}
+
+.service-more__title {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.service-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+    transition: all 0.2s;
+
+    svg {
+      color: var(--accent);
+    }
+
+    @include hover {
+      color: var(--text);
+      border-color: var(--border-strong);
+    }
+  }
+}
+
+.specialist-grid {
+  display: grid;
+  gap: 20px;
+
+  @include up($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include up($bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.specialist-card {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  height: 100%;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  transition:
+    border-color 0.25s,
+    transform 0.35s var(--ease-out);
+
+  strong {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  > span:not(.link-arrow):not(.service-card__icon) {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .link-arrow {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  @include hover {
+    transform: translateY(-3px);
+    border-color: rgba(254, 197, 68, 0.35);
+  }
+}

@@ -22,7 +22,7 @@ No test framework is configured. Deployed on Cloudflare Pages via `.github/workf
 
 **Stack:** React 18 + Vite 4, JavaScript/JSX, SCSS (no Bootstrap), React Router v6, react-helmet-async, three.js via @react-three/fiber (lazy-loaded), Lenis smooth scroll, Iconify icons.
 
-**Routes** (`src/App.jsx`, all inside `components/layout/Layout.jsx`): `/` Home · `/work` · `/work/:slug` case study · `/about` · `/services` · `/contact` · `/achievements` (Fiverr record + reviews, award, degree, reference letters; `/credentials` redirects here) · `*` 404. Old `/project/:slug` links redirect to `/work/:slug`. All pages except Home are lazy-loaded.
+**Routes** (`src/App.jsx`, all inside `components/layout/Layout.jsx`): `/` Home · `/work` · `/work/:slug` case study · `/about` · `/services` · `/services/:slug` (5 SEO landing pages from `service-pages.json`) · `/contact` · `/achievements` (Fiverr record + reviews, award, degree, reference letters; `/credentials` redirects here) · `*` 404. Old `/project/:slug` links redirect to `/work/:slug`. All pages except Home are lazy-loaded.
 
 **Content lives in `src/data/*.json`** (never hard-code content in components):
 | File | Contents |
@@ -34,6 +34,7 @@ No test framework is configured. Deployed on Cloudflare Pages via `.github/workf
 | `skills.json` | Grouped tech stack (Iconify icon names) |
 | `testimonials.json` | Client reviews |
 | `credentials.json` | Award, degree, professor references (quotes + PDF links), downloadable documents |
+| `service-pages.json` | Service landing pages (problems, deliverables, proof → case studies, FAQ) |
 | `fiverr.json` | Fiverr level, stats and selected reviews (quoted from fiverr.com/devshair) |
 
 `src/lib/content.js` exposes helpers (`getProject`, `whatsappUrl`, `absoluteUrl`, `personJsonLd`).
@@ -54,7 +55,8 @@ No test framework is configured. Deployed on Cloudflare Pages via `.github/workf
 - Icons are bundled offline in `src/lib/icons.json` (registered in `src/lib/icons.js`). When using a new Iconify icon, add it there or it will be fetched from the Iconify API at runtime.
 - Fonts are self-hosted (`@fontsource-variable/inter`, `@fontsource-variable/space-grotesk`); `vite.config.js` preloads the latin files.
 - Public PDFs live in `public/docs/` with descriptive file names and PDF metadata (title/author). Transcript and reference letters are **redacted** copies (CNIC, father's name, student/registration numbers, a professor's mobile). Unredacted originals are in `design-assets/private/` (gitignored); never put them in `public/`.
-- `public/sitemap.xml` lists every page, image and PDF; regenerate it when adding images or documents.
+- `public/sitemap.xml` lists every page, image and PDF; regenerate with `node scripts/generate-sitemap.mjs` after adding pages, projects, images or documents.
+- SEO conventions: every `<Seo>` title should contain "Shair Ali" (titles that include the name are used as-is), descriptions ≤155 chars (they are clipped otherwise), images get descriptive alt text. Person JSON-LD lives in `personJsonLd()` (`src/lib/content.js`). Off-site steps are in `docs/SEO-LAUNCH-CHECKLIST.md`.
 - Typography: a single family (Inter Variable) with modest heading sizes and solid accent colour for emphasis. No gradient text, no second display font.
 - Never ship screenshots that show personal data (emails, client names, request IDs): blur them first.
 

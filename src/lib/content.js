@@ -14,10 +14,10 @@ export const NAV_LINKS = [
   { to: '/contact', label: 'Contact' },
 ];
 
-export const faqJsonLd = () => ({
+export const faqJsonLd = (items = faq) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: faq.map((f) => ({
+  mainEntity: items.map((f) => ({
     '@type': 'Question',
     name: f.q,
     acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -44,9 +44,33 @@ export const personJsonLd = () => ({
   '@type': 'Person',
   '@id': `${SITE_URL}/#person`,
   name: profile.name,
+  alternateName: profile.alternateNames,
+  givenName: 'Shair',
+  familyName: 'Ali',
   url: `${SITE_URL}/`,
-  image: absoluteUrl(profile.portrait),
+  mainEntityOfPage: `${SITE_URL}/`,
+  image: {
+    '@type': 'ImageObject',
+    '@id': `${SITE_URL}/#portrait`,
+    url: absoluteUrl(profile.portraitJpg),
+    contentUrl: absoluteUrl(profile.portraitJpg),
+    width: 720,
+    height: 720,
+    caption: profile.portraitAlt,
+    creditText: profile.name,
+    creator: { '@type': 'Person', name: profile.name },
+    copyrightNotice: `© ${profile.name}`,
+    acquireLicensePage: `${SITE_URL}/contact`,
+  },
   jobTitle: profile.role,
+  hasOccupation: {
+    '@type': 'Occupation',
+    name: 'Full-Stack Developer',
+    occupationLocation: { '@type': 'Country', name: 'Pakistan' },
+    skills: 'React, Next.js, Node.js, MongoDB, PostgreSQL, Stripe, WebRTC, OpenAI, n8n, AWS, DigitalOcean, Nginx, CI/CD',
+  },
+  worksFor: { '@type': 'Organization', name: 'Self-employed (freelance)' },
+  nationality: { '@type': 'Country', name: 'Pakistan' },
   email: `mailto:${profile.email}`,
   description: profile.intro,
   knowsLanguage: profile.languages,
@@ -71,6 +95,10 @@ export const personJsonLd = () => ({
     'Real-time applications',
     'WebRTC',
     'AI chatbots',
+    'AI agents',
+    'AI app rescue (Lovable, Bolt, Cursor)',
+    'n8n automation',
+    'WhatsApp AI assistants',
     'AWS',
     'DevOps',
   ],

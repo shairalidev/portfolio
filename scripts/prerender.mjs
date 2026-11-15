@@ -17,6 +17,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
 const ssrDir = join(root, 'dist-ssr');
 const projects = JSON.parse(readFileSync(join(root, 'src/data/projects.json'), 'utf8'));
+const servicePages = JSON.parse(readFileSync(join(root, 'src/data/service-pages.json'), 'utf8'));
 
 const routes = [
   ['/', 'index.html'],
@@ -26,6 +27,7 @@ const routes = [
   ['/contact', 'contact.html'],
   ['/achievements', 'achievements.html'],
   ...projects.map((p) => [`/work/${p.slug}`, `work/${p.slug}.html`]),
+  ...servicePages.map((p) => [`/services/${p.slug}`, `services/${p.slug}.html`]),
   ['/__not-found__', '404.html'],
 ];
 

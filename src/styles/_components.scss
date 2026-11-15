@@ -717,11 +717,21 @@
     gap: 40px;
 
     @include up($bp-md) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
     }
 
     @include up($bp-lg) {
-      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      grid-template-columns: 1.5fr repeat(4, 1fr);
+    }
+  }
+
+  &__top > &__brand {
+    @include up($bp-md) {
+      grid-column: 1 / -1;
+    }
+
+    @include up($bp-lg) {
+      grid-column: auto;
     }
   }
 

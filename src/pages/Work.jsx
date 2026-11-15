@@ -7,8 +7,8 @@ import { absoluteUrl, projects } from '../lib/content';
 const Work = () => (
   <>
     <Seo
-      title="Work & case studies"
-      description="Case studies of production platforms built end to end by Shair Ali: a real-time expert marketplace, a lien-compliance SaaS, a tenant certification platform and a hotel website with AI support."
+      title="Case Studies by Shair Ali, Full-Stack Developer"
+      description="Case studies by Shair Ali: a real-time expert marketplace, a lien-compliance SaaS, a tenant certification platform and a hotel site with an AI assistant."
       path="/work"
       jsonLd={[
         {

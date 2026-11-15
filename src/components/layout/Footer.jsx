@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { NAV_LINKS, profile, projects, whatsappUrl } from '../../lib/content';
+import servicePages from '../../data/service-pages.json';
 
 const Footer = () => (
   <footer className="site-footer">
@@ -18,6 +19,15 @@ const Footer = () => (
           <ul>
             {NAV_LINKS.map(({ to, label }) => (
               <li key={to}><Link to={to}>{label}</Link></li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="site-footer__col">
+          <h3>Services</h3>
+          <ul>
+            {servicePages.map((p) => (
+              <li key={p.slug}><Link to={`/services/${p.slug}`}>{p.eyebrow}</Link></li>
             ))}
           </ul>
         </div>

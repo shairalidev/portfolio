@@ -27,8 +27,9 @@ const CaseStudy = () => {
   return (
     <article className="case" style={{ '--project': project.accent }}>
       <Seo
-        title={`${project.title}: case study`}
-        description={`${project.tagline} ${project.summary}`.slice(0, 300)}
+        title={`${project.title} case study by Shair Ali`}
+        description={`${project.title}, built by Shair Ali: ${project.tagline}`}
+        imageAlt={project.coverAlt}
         path={`/work/${project.slug}`}
         image={project.ogImage || project.hero}
         type="article"
@@ -42,6 +43,8 @@ const CaseStudy = () => {
             url: absoluteUrl(`/work/${project.slug}`),
             image: absoluteUrl(project.hero),
             author: { '@type': 'Person', '@id': `${SITE_URL}/#person`, name: 'Shair Ali', url: `${SITE_URL}/` },
+            creator: { '@id': `${SITE_URL}/#person` },
+            inLanguage: 'en',
             dateCreated: project.year.slice(0, 4),
             keywords: Object.values(project.stack).flat().join(', '),
             sameAs: project.liveUrl,
@@ -120,7 +123,7 @@ const CaseStudy = () => {
             {project.mobile && (
               <div className="phone" aria-hidden="true">
                 <div className="phone__screen">
-                  <img src={project.mobile} alt="" loading="lazy" />
+                  <img src={project.mobile} alt={`${project.title} mobile view, built by Shair Ali`} loading="lazy" decoding="async" />
                 </div>
               </div>
             )}
@@ -261,7 +264,7 @@ const CaseStudy = () => {
         <div className="container case-nav__inner">
           {[{ p: prev, label: 'Previous project', dir: 'prev' }, { p: next, label: 'Next project', dir: 'next' }].map(({ p, label, dir }) => (
             <Link key={dir} to={`/work/${p.slug}`} className={`case-nav__card case-nav__card--${dir}`} style={{ '--project': p.accent }}>
-              <img src={p.cover} alt="" loading="lazy" />
+              <img src={p.cover} alt={`${p.title} by Shair Ali`} width="900" height="563" loading="lazy" decoding="async" />
               <span className="case-nav__text">
                 <small>
                   {dir === 'prev' && <Icon icon="solar:arrow-left-linear" aria-hidden="true" />}

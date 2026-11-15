@@ -23,7 +23,7 @@ const HeroStack = () => (
   <div className="hero-stack" aria-hidden="true">
     {projects.slice(0, 3).map((p, i) => (
       <div key={p.slug} className={`hero-stack__card hero-stack__card--${i}`} style={{ '--project': p.accent }}>
-        <img src={p.cover} alt="" width="800" height="500" loading={i === 1 ? 'eager' : 'lazy'} decoding="async" />
+        <img src={p.cover} alt={p.coverAlt} width="800" height="500" loading={i === 1 ? 'eager' : 'lazy'} decoding="async" />
       </div>
     ))}
   </div>
@@ -82,7 +82,8 @@ const Hero = () => {
       <div className="container hero__inner">
         <div className="hero__content">
           <h1 className="hero__title">
-            I design, build &amp; run <span className="text-gradient">production web platforms</span>, end to end.
+            <span className="hero__name">{profile.name} · Full-stack &amp; AI developer</span>{' '}
+            From idea to a <span className="text-gradient">live product</span>, built and kept running.
           </h1>
           <p className="hero__lead">{profile.intro}</p>
           <div className="hero__actions">

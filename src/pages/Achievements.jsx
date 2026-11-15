@@ -58,7 +58,7 @@ const Achievements = () => (
   <>
     <Seo
       title="Achievements: Fiverr reviews, award & education"
-      description={`${profile.name}: Fiverr ${fiverr.level} rated ${fiverr.stats[0].value} by repeat clients in the USA and Europe, ${award.title.toLowerCase()} at the ${award.event}, and a BS Computer Science (CGPA ${degree.cgpa}).`}
+      description={`${profile.name}: Fiverr ${fiverr.level} rated ${fiverr.stats[0].value} by repeat US and EU clients, plus an academic excellence award and a BS in Computer Science.`}
       path="/achievements"
       image={award.imageJpg}
       jsonLd={jsonLd}

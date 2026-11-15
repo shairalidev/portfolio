@@ -1,0 +1,267 @@
+[
+  {
+    "slug": "ai-app-rescue",
+    "icon": "solar:shield-check-linear",
+    "eyebrow": "AI app rescue",
+    "title": "Fix and finish your AI-built app",
+    "metaTitle": "Fix Your Lovable, Bolt or Cursor App | Shair Ali",
+    "description": "Stuck with an app built in Lovable, Bolt, Cursor or Claude Code? Shair Ali fixes the bugs, secures it and ships it to production on your own server.",
+    "intro": "AI builders get you a working demo fast. Getting from that demo to something paying users can trust is a different job: real authentication, payments that don't double-charge, data that's protected, and a deployment you control. That's the part I do.",
+    "problems": [
+      "The app works in the preview but breaks once real users sign up",
+      "Login, roles or database rules are leaking data or locking people out",
+      "Stripe payments or webhooks fire twice, or not at all",
+      "Every new prompt fixes one thing and breaks two others",
+      "You want to move off the builder's hosting onto your own server or AWS"
+    ],
+    "deliverables": [
+      "A written audit of the codebase: what's broken, what's risky, what to keep",
+      "Fixes for authentication, access control and data validation",
+      "Payments and webhooks made reliable (verified, idempotent, logged)",
+      "Clean-up of duplicated, AI-generated code so it can be maintained",
+      "Deployment to your own server or cloud with SSL, monitoring and CI/CD",
+      "A handover: how it works, how to deploy, what to build next"
+    ],
+    "proof": [
+      {
+        "slug": "tenant-certification",
+        "text": "Took over a live 2021 codebase I didn't write and modernized it while it stayed online: hardened security, rebuilt payments with verified Stripe webhooks, and added one-push deploys."
+      },
+      {
+        "slug": "rivelya",
+        "text": "Built billing that can't drift: the server is the source of truth, and payments are protected against duplicates at the database level."
+      }
+    ],
+    "keywords": [
+      "fix Lovable app",
+      "vibe coded app rescue",
+      "Bolt app to production",
+      "finish AI-built app",
+      "Cursor project cleanup"
+    ],
+    "faq": [
+      {
+        "q": "Which AI tools do you work with?",
+        "a": "Apps started in Lovable, Bolt, v0, Cursor, Replit or Claude Code. Underneath they're usually React or Next.js with Supabase, Firebase or a Node API, which is my everyday stack."
+      },
+      {
+        "q": "Do I have to start over?",
+        "a": "Rarely. I start with an audit, keep what's solid and fix or replace the parts that put your users or data at risk. You get a clear list before any big change."
+      },
+      {
+        "q": "Can you move my app off Lovable or Bolt hosting?",
+        "a": "Yes. I can deploy it to your own VPS, DigitalOcean or AWS with a domain, SSL and automatic deploys from GitHub, so you own the whole setup."
+      },
+      {
+        "q": "How do we start?",
+        "a": "Send me the repo or a link to the app and a short list of what's broken. I'll reply with what it needs and a fixed quote."
+      }
+    ]
+  },
+  {
+    "slug": "deployment-devops",
+    "icon": "solar:server-square-cloud-linear",
+    "eyebrow": "Deployment & DevOps",
+    "title": "Deploy your Next.js or Node.js app to production",
+    "metaTitle": "Deploy Next.js & Node.js Apps to AWS or a VPS | Shair Ali",
+    "description": "Shair Ali deploys Next.js and Node.js apps to AWS, DigitalOcean or any VPS with Nginx, PM2, SSL and one-push CI/CD from GitHub, then keeps them running.",
+    "intro": "Your app runs on your laptop. I get it running on a real server: a domain, HTTPS, a process manager that restarts it when it crashes, and deploys that happen with a git push instead of a nervous SSH session.",
+    "problems": [
+      "The app works locally but you don't know how to put it online",
+      "Deploys are manual and something breaks every time",
+      "SSL, DNS or the Nginx config is wrong and the site is down",
+      "Hosting bills on serverless platforms are climbing",
+      "Nobody is watching the server once it's live"
+    ],
+    "deliverables": [
+      "Server setup on AWS EC2, DigitalOcean, Hetzner or any Ubuntu VPS",
+      "Nginx reverse proxy, HTTPS certificates and DNS",
+      "PM2 process management with automatic restarts",
+      "CI/CD with GitHub Actions: build, migrate and restart on every push",
+      "Environment and secrets set up properly, with no keys in the repo",
+      "Health checks and a short runbook so you know what to do if something fails"
+    ],
+    "proof": [
+      {
+        "slug": "rivelya",
+        "text": "Push-to-deploy CI/CD on AWS EC2 with Nginx and PM2: GitHub Actions connects over SSH, installs, builds and restarts with no downtime."
+      },
+      {
+        "slug": "tenant-certification",
+        "text": "One-push deploys for two apps on an Ubuntu VPS: GitHub Actions builds both, runs migrations, restarts PM2 and reloads Nginx."
+      }
+    ],
+    "keywords": [
+      "deploy Next.js app to DigitalOcean",
+      "deploy Node.js app to AWS",
+      "Nginx PM2 SSL setup",
+      "GitHub Actions CI/CD freelancer"
+    ],
+    "faq": [
+      {
+        "q": "Which hosting do you recommend?",
+        "a": "For most small products a single VPS (DigitalOcean, Hetzner or AWS EC2) with Nginx and PM2 is cheaper and simpler than serverless. I'll recommend based on your traffic and budget."
+      },
+      {
+        "q": "Will my site go down during the move?",
+        "a": "No. I set up and test the new server first, then switch DNS once everything works."
+      },
+      {
+        "q": "Do you offer ongoing maintenance?",
+        "a": "Yes. I can keep watching updates, certificates, backups and uptime after launch, which is how most of my clients work with me."
+      }
+    ]
+  },
+  {
+    "slug": "ai-chatbot-whatsapp",
+    "icon": "ic:baseline-whatsapp",
+    "eyebrow": "AI chatbots",
+    "title": "AI chatbots and WhatsApp assistants for your business",
+    "metaTitle": "AI Chatbot & WhatsApp Assistant Developer | Shair Ali",
+    "description": "Shair Ali builds AI assistants trained on your business that answer customers 24/7 on your website and WhatsApp, and hand over to a person when needed.",
+    "intro": "Your customers ask the same questions every day, often outside office hours. I build AI assistants that answer them from your own information, on your website and on WhatsApp, and pass the conversation to your team when a person is needed.",
+    "problems": [
+      "Your team answers the same questions about prices, availability and policies",
+      "Messages arrive at night and in other languages",
+      "Generic chatbots give wrong answers about your business",
+      "You want customers on WhatsApp without someone watching the phone"
+    ],
+    "deliverables": [
+      "An assistant grounded in your own content: FAQs, prices, policies, documents",
+      "Website chat widget and WhatsApp integration",
+      "Hand-over to a human, plus conversation logs you can review",
+      "Multilingual replies for international customers",
+      "Hosting on your own server with your own API keys"
+    ],
+    "proof": [
+      {
+        "slug": "grand-hotel-selinunte",
+        "text": "An AI assistant tuned to a Sicilian hotel's own information, answering guests 24/7 on the website and on WhatsApp."
+      },
+      {
+        "slug": "rivelya",
+        "text": "A built-in AI support assistant running on Groq's Llama 3.1, with Gemini as a fallback."
+      }
+    ],
+    "keywords": [
+      "AI chatbot for website developer",
+      "WhatsApp AI chatbot for hotel",
+      "OpenAI chatbot integration",
+      "AI customer support assistant"
+    ],
+    "faq": [
+      {
+        "q": "Which AI models do you use?",
+        "a": "OpenAI, Groq (Llama), Gemini or Claude, depending on cost, speed and language. I usually set up a fallback model so the assistant stays available."
+      },
+      {
+        "q": "Will it make things up about my business?",
+        "a": "It answers from the information you provide and is told to hand over to a person when it isn't sure. I test it on your real questions before launch."
+      },
+      {
+        "q": "Can it book or take orders?",
+        "a": "Yes, it can connect to your booking system, CRM or a simple form through an API or an automation tool such as n8n."
+      }
+    ]
+  },
+  {
+    "slug": "ai-automation",
+    "icon": "solar:bolt-circle-linear",
+    "eyebrow": "AI automation",
+    "title": "AI automation and agents for repetitive work",
+    "metaTitle": "AI Automation & n8n Workflow Developer | Shair Ali",
+    "description": "Shair Ali automates repetitive work with AI agents, n8n workflows and custom integrations: quotes, emails, documents, CRM updates and alerts.",
+    "intro": "If someone on your team copies data between tools, writes the same emails or builds the same documents every week, that work can usually be automated. I connect your tools with n8n or custom code and add AI where it saves real time.",
+    "problems": [
+      "Staff copy data between forms, spreadsheets, email and your CRM",
+      "Quotes, receipts or reports are built by hand",
+      "Leads wait hours for a reply",
+      "You've tried no-code tools but the workflows keep breaking"
+    ],
+    "deliverables": [
+      "A map of the manual steps worth automating, with time saved for each",
+      "n8n workflows or custom Node.js services, self-hosted if you prefer",
+      "AI steps for classifying, summarising, drafting and extracting data",
+      "Integrations with Stripe, email, CRMs, spreadsheets and WhatsApp",
+      "Error alerts and logs so failures don't go unnoticed"
+    ],
+    "proof": [
+      {
+        "slug": "grand-hotel-selinunte",
+        "text": "In-house tools that automate the hotel's quotes and receipts, alongside its AI guest assistant."
+      },
+      {
+        "slug": "cover-me-lien-services",
+        "text": "Thirteen automated email flows that move each lien request from intake and payment through to delivery."
+      }
+    ],
+    "keywords": [
+      "n8n automation expert",
+      "hire n8n developer",
+      "AI agent developer",
+      "business process automation freelancer"
+    ],
+    "faq": [
+      {
+        "q": "n8n, Zapier or custom code?",
+        "a": "n8n when you want flexibility and self-hosting, Zapier or Make for simple flows, and custom code when the logic is complex or needs to be very reliable. I'll suggest the cheapest option that works."
+      },
+      {
+        "q": "What if a workflow fails?",
+        "a": "Every workflow I build has error handling and sends an alert, so a failure is noticed and fixed instead of silently losing data."
+      },
+      {
+        "q": "Can you host it for me?",
+        "a": "Yes, on your own server or a small VPS, so you're not paying per task."
+      }
+    ]
+  },
+  {
+    "slug": "realtime-video-apps",
+    "icon": "solar:videocamera-record-linear",
+    "eyebrow": "Real-time apps",
+    "title": "Real-time chat, voice and video apps",
+    "metaTitle": "WebRTC Developer for Chat, Voice & Video Apps | Shair Ali",
+    "description": "Shair Ali builds real-time chat, voice and video apps with WebRTC, LiveKit and Socket.IO, including consultation marketplaces with per-minute billing.",
+    "intro": "Live features are where many apps fall apart: dropped calls, timers that drift, billing that doesn't match the session. I build real-time products where the server keeps the truth, so calls, chat and payments stay in sync.",
+    "problems": [
+      "You need video or voice calls inside your app, not a Zoom link",
+      "Sessions must be billed by the minute, accurately",
+      "Chat, notifications and presence need to update instantly",
+      "Your current real-time feature is unreliable under load"
+    ],
+    "deliverables": [
+      "Video and voice calls with WebRTC (LiveKit) and real-time chat with Socket.IO",
+      "Presence, typing indicators, notifications and live dashboards",
+      "Wallets, per-minute metering and Stripe top-ups",
+      "Scheduling with automatic session start and end",
+      "Admin and provider consoles for running the marketplace"
+    ],
+    "proof": [
+      {
+        "slug": "rivelya",
+        "text": "A pay-per-minute expert marketplace in Italy with chat, voice and video in one place: 1,250+ commits, 180+ API endpoints, and billing that can't drift."
+      }
+    ],
+    "keywords": [
+      "WebRTC developer for hire",
+      "pay per minute video consultation app",
+      "expert marketplace with video calls",
+      "Socket.IO real-time app developer"
+    ],
+    "faq": [
+      {
+        "q": "Do you use LiveKit, Twilio or plain WebRTC?",
+        "a": "Usually LiveKit for video and voice because it scales and handles bad networks well, Twilio for phone and SMS, and Socket.IO for chat and live updates."
+      },
+      {
+        "q": "How is per-minute billing kept accurate?",
+        "a": "The server meters every session and is the source of truth; the browser only displays the timer. Payments are deduplicated so nobody is charged twice."
+      },
+      {
+        "q": "Can you add video to my existing app?",
+        "a": "Yes. I can add calls, chat or live updates to an existing React or Node.js product without rebuilding it."
+      }
+    ]
+  }
+]

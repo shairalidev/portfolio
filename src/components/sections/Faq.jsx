@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import Reveal from '../ui/Reveal';
-import { faq } from '../../data/services.json';
+import { faq as defaultFaq } from '../../data/services.json';
 
-const Faq = () => (
+const Faq = ({ items = defaultFaq }) => (
   <div className="faq">
-    {faq.map((f, i) => (
+    {items.map((f, i) => (
       <Reveal key={f.q} delay={i * 60}>
         <details className="faq__item">
           <summary>
@@ -17,5 +18,9 @@ const Faq = () => (
     ))}
   </div>
 );
+
+Faq.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({ q: PropTypes.string, a: PropTypes.string })),
+};
 
 export default Faq;

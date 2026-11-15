@@ -3,14 +3,23 @@ import Seo from '../components/ui/Seo';
 import PageHeader from '../components/ui/PageHeader';
 import Reveal from '../components/ui/Reveal';
 import ContactForm from '../components/forms/ContactForm';
-import { profile, whatsappUrl } from '../lib/content';
+import { SITE_URL, absoluteUrl, profile, whatsappUrl } from '../lib/content';
 
 const Contact = () => (
   <>
     <Seo
-      title="Contact"
-      description="Start a project with Shair Ali. Send a message or chat on WhatsApp about your web app, SaaS, marketplace, payments or AI project."
+      title="Hire Shair Ali – Contact"
+      description="Hire Shair Ali, full-stack and AI developer. Send a message or chat on WhatsApp about your web app, SaaS, AI chatbot, automation or deployment."
       path="/contact"
+      jsonLd={[
+        {
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          url: absoluteUrl('/contact'),
+          name: `Contact ${profile.name}`,
+          mainEntity: { '@id': `${SITE_URL}/#person` },
+        },
+      ]}
     />
 
     <PageHeader

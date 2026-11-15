@@ -43,7 +43,7 @@ const ProjectCard = ({ project, index, variant = 'grid' }) => {
               src={project.cover}
               srcSet={project.hero !== project.cover ? `${project.cover} 900w, ${project.hero} 1600w` : undefined}
               sizes={variant === 'feature' ? '(min-width: 1024px) 690px, 100vw' : '(min-width: 768px) 50vw, 100vw'}
-              alt=""
+              alt={`${project.coverAlt}, built by Shair Ali`}
               width="1600"
               height="1000"
               loading="lazy"

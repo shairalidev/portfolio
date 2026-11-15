@@ -8,6 +8,7 @@ const Work = lazy(() => import('./pages/Work'));
 const CaseStudy = lazy(() => import('./pages/CaseStudy'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
+const ServicePage = lazy(() => import('./pages/ServicePage'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Achievements = lazy(() => import('./pages/Achievements'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -27,6 +28,7 @@ export const AppRoutes = () => (
       <Route path="work/:slug" element={<CaseStudy />} />
       <Route path="about" element={<About />} />
       <Route path="services" element={<Services />} />
+      <Route path="services/:slug" element={<ServicePage />} />
       <Route path="contact" element={<Contact />} />
       <Route path="achievements" element={<Achievements />} />
       <Route path="credentials" element={<Navigate to="/achievements" replace />} />

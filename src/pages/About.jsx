@@ -50,8 +50,10 @@ Timeline.propTypes = {
 const About = () => (
   <>
     <Seo
-      title="About"
-      description="About Shair Ali: a full-stack developer who designs, builds, deploys and maintains production web platforms for clients in the USA and Europe."
+      title="About Shair Ali – Full-Stack & AI Developer from Pakistan"
+      description="About Shair Ali: a full-stack and AI developer from Pakistan who builds, deploys and maintains live web platforms for clients in the USA and Europe."
+      image={profile.portraitJpg}
+      imageAlt={profile.portraitAlt}
       path="/about"
       jsonLd={[{ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personJsonLd() }]}
     />

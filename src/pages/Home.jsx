@@ -15,15 +15,28 @@ import { SITE_URL, absoluteUrl, personJsonLd, profile, projects } from '../lib/c
 const Home = () => (
   <>
     <Seo
-      description="Shair Ali is a full-stack developer who designs, builds and runs production web platforms: SaaS, marketplaces, payments, real-time apps and AI assistants for clients in the USA and Europe."
+      description="Shair Ali is a full-stack and AI developer who turns ideas into live products: SaaS, marketplaces, AI chatbots and automation for US and EU clients."
       path="/"
+      imageAlt="Shair Ali, full-stack developer"
       jsonLd={[
-        personJsonLd(),
+        {
+          '@context': 'https://schema.org',
+          '@type': 'ProfilePage',
+          '@id': `${SITE_URL}/#profile`,
+          url: `${SITE_URL}/`,
+          name: `${profile.name} – ${profile.role}`,
+          dateModified: '2026-11-15',
+          inLanguage: 'en',
+          mainEntity: personJsonLd(),
+        },
         {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
+          '@id': `${SITE_URL}/#website`,
           url: `${SITE_URL}/`,
-          name: `${profile.name} | ${profile.role}`,
+          name: profile.name,
+          alternateName: ['shairali.com', `${profile.name} – ${profile.role}`],
+          inLanguage: 'en',
           publisher: { '@id': `${SITE_URL}/#person` },
         },
         {
