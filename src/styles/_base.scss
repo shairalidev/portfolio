@@ -49,8 +49,8 @@ h4 {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.022em;
   color: var(--text);
 }
 
@@ -212,10 +212,8 @@ button {
 }
 
 .text-gradient {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  // Kept as a hook for emphasised words; a solid accent reads cleaner than a gradient
+  color: var(--accent);
 }
 
 // Scroll-reveal animation states

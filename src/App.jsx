@@ -9,6 +9,7 @@ const CaseStudy = lazy(() => import('./pages/CaseStudy'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Credentials = lazy(() => import('./pages/Credentials'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 /** Old /project/:slug links keep working. */
@@ -27,6 +28,7 @@ export const AppRoutes = () => (
       <Route path="about" element={<About />} />
       <Route path="services" element={<Services />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="credentials" element={<Credentials />} />
       <Route path="project/:slug" element={<LegacyProjectRedirect />} />
       <Route path="*" element={<NotFound />} />
     </Route>

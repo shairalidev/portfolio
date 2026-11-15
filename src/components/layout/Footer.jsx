@@ -25,6 +25,7 @@ const Footer = () => (
             {NAV_LINKS.map(({ to, label }) => (
               <li key={to}><Link to={to}>{label}</Link></li>
             ))}
+            <li><Link to="/credentials">Education & references</Link></li>
           </ul>
         </div>
 

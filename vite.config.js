@@ -8,7 +8,7 @@ const preloadFonts = () => ({
   transformIndexHtml(html, ctx) {
     if (!ctx.bundle) return html
     return Object.keys(ctx.bundle)
-      .filter((file) => /(inter|space-grotesk)-latin-wght-normal-[\w-]+\.woff2$/.test(file))
+      .filter((file) => /(inter)-latin-wght-normal-[\w-]+\.woff2$/.test(file))
       .map((file) => ({
         tag: 'link',
         attrs: { rel: 'preload', href: `/${file}`, as: 'font', type: 'font/woff2', crossorigin: '' },

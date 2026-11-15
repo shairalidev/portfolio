@@ -143,3 +143,6 @@ dist/
 
 # Temporary SSR bundle used by scripts/prerender.mjs
 dist-ssr/
+
+# Unredacted originals (CNIC, phone numbers) - never deploy
+design-assets/private/

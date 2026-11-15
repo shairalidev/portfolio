@@ -11,7 +11,9 @@ import Stats from '../components/sections/Stats';
 import TechStack from '../components/sections/TechStack';
 import Testimonials from '../components/sections/Testimonials';
 import { experience, education } from '../data/experience.json';
-import { personJsonLd, profile, whatsappUrl } from '../lib/content';
+import { credentials, personJsonLd, profile, whatsappUrl } from '../lib/content';
+
+const { award, references } = credentials;
 
 const Timeline = ({ items }) => (
   <ol className="timeline">
@@ -95,6 +97,23 @@ const About = () => (
         <div>
           <SectionHeader eyebrow="Education" title="Foundations" />
           <Timeline items={education} />
+          <Reveal as="figure" className="about-award">
+            <img
+              src={award.imageSmall}
+              alt={award.alt}
+              width="900"
+              height="544"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong><Icon icon="solar:cup-star-linear" aria-hidden="true" />{award.title}</strong>
+              <span>{award.event} · Riphah School of Computing & Innovation</span>
+              <Link to="/credentials" className="link-arrow">
+                Degree, award & {references.length} reference letters <Icon icon="solar:arrow-right-linear" aria-hidden="true" />
+              </Link>
+            </figcaption>
+          </Reveal>
           <Reveal className="principles">
             <h3>How I work</h3>
             <ul className="check-list">

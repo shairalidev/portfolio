@@ -1,6 +1,7 @@
 import profile from '../data/profile.json';
 import projects from '../data/projects.json';
 import { faq } from '../data/services.json';
+import credentials from '../data/credentials.json';
 
 export const SITE_URL = profile.siteUrl;
 
@@ -49,6 +50,16 @@ export const personJsonLd = () => ({
   knowsLanguage: profile.languages,
   address: { '@type': 'PostalAddress', addressCountry: 'PK' },
   sameAs: profile.socials.map((s) => s.url),
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Riphah International University', url: 'https://www.riphah.edu.pk' },
+  award: `${credentials.award.title}, ${credentials.award.event} (${credentials.award.issuer})`,
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    name: `${credentials.degree.title}, CGPA ${credentials.degree.cgpa}`,
+    credentialCategory: 'degree',
+    educationalLevel: 'Bachelor',
+    recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Riphah International University' },
+    url: absoluteUrl('/credentials'),
+  },
   knowsAbout: [
     'Full-stack web development',
     'React',
@@ -63,4 +74,4 @@ export const personJsonLd = () => ({
   ],
 });
 
-export { profile, projects };
+export { profile, projects, credentials };

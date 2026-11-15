@@ -20,7 +20,7 @@
   }
 
   &__text .page-header__title {
-    font-size: clamp(38px, 5.6vw, 68px);
+    font-size: clamp(32px, 4.2vw, 52px);
     margin-bottom: 28px;
   }
 
@@ -401,5 +401,241 @@
 
   .hero__actions {
     justify-content: center;
+  }
+}
+
+/* ---------- Award (About + Credentials) ---------- */
+.about-award {
+  margin: 24px 0 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    display: grid;
+    gap: 6px;
+    justify-items: start;
+    padding: 20px 24px 24px;
+
+    strong {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 17px;
+
+      svg {
+        color: var(--accent);
+      }
+    }
+
+    span {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .link-arrow {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+.award {
+  display: grid;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elev);
+  box-shadow: var(--shadow-lg);
+
+  @include up($bp-lg) {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  &__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: grid;
+    align-content: center;
+    gap: 12px;
+    padding: 28px 24px 32px;
+
+    @include up($bp-md) {
+      padding: 40px;
+    }
+
+    .eyebrow {
+      margin-bottom: 4px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-size: clamp(24px, 2.6vw, 32px);
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+  }
+
+  &__meta {
+    font-size: 14px;
+  }
+}
+
+/* ---------- Degree ---------- */
+.degree {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+
+  @include up($bp-lg) {
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 72px;
+  }
+
+  &__photo {
+    max-width: 320px;
+    margin-inline: auto;
+    border-radius: var(--radius-xl);
+    background:
+      radial-gradient(80% 60% at 50% 100%, rgba(254, 197, 68, 0.28), transparent 70%),
+      var(--bg-elev);
+    border: 1px solid var(--border);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 8px;
+  }
+
+  &__school {
+    color: var(--text-muted);
+  }
+
+  &__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+
+    div {
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    dt {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    dd {
+      margin: 4px 0 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    color: var(--text-muted);
+  }
+
+  .hero__actions {
+    margin-top: 28px;
+  }
+}
+
+/* ---------- References ---------- */
+.references {
+  display: grid;
+  gap: 20px;
+
+  @include up($bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reference {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+
+  &__preview {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    background: #fff;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s var(--ease-out);
+    }
+
+    @include hover {
+      img {
+        transform: scale(1.04);
+      }
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    flex: 1;
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  figcaption {
+    display: grid;
+    gap: 2px;
+    justify-items: start;
+
+    small {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .link-arrow {
+      margin-top: 10px;
+      font-size: 14px;
+    }
   }
 }

@@ -6,10 +6,10 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 16px;
-  font-family: var(--font-display);
-  font-size: 13px;
+  font-family: var(--font-body);
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
 
@@ -57,12 +57,12 @@
   }
 
   &__title {
-    font-size: clamp(30px, 5vw, 52px);
+    font-size: clamp(26px, 3.4vw, 40px);
   }
 
   &__text {
     margin-top: 18px;
-    font-size: clamp(16px, 1.6vw, 19px);
+    font-size: clamp(15px, 1.4vw, 17px);
     color: var(--text-muted);
   }
 
@@ -766,7 +766,7 @@
       font-size: 13px;
       font-family: var(--font-body);
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--text-dim);
     }
@@ -896,7 +896,7 @@
 
   &__value {
     font-family: var(--font-display);
-    font-size: clamp(30px, 4.5vw, 48px);
+    font-size: clamp(28px, 3.6vw, 40px);
     font-weight: 600;
     letter-spacing: -0.03em;
     line-height: 1;
@@ -928,14 +928,14 @@
 
   &__title {
     max-width: 900px;
-    font-size: clamp(40px, 7vw, 84px);
-    letter-spacing: -0.035em;
+    font-size: clamp(32px, 4.8vw, 56px);
+    letter-spacing: -0.028em;
   }
 
   &__text {
     max-width: 680px;
     margin-top: 24px;
-    font-size: clamp(17px, 1.8vw, 20px);
+    font-size: clamp(16px, 1.5vw, 18px);
     color: var(--text-muted);
   }
 
@@ -977,7 +977,7 @@
     position: relative;
     max-width: 760px;
     margin-inline: auto;
-    font-size: clamp(30px, 5vw, 56px);
+    font-size: clamp(26px, 3.6vw, 42px);
   }
 
   &__text {

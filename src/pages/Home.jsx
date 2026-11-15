@@ -1,6 +1,7 @@
 import Seo from '../components/ui/Seo';
 import Hero from '../components/home/Hero';
 import Stats from '../components/sections/Stats';
+import AboutIntro from '../components/home/AboutIntro';
 import { TechMarquee } from '../components/sections/TechStack';
 import ProjectCard from '../components/work/ProjectCard';
 import ServicesGrid from '../components/sections/ServicesGrid';
@@ -42,6 +43,7 @@ const Home = () => (
     <Hero />
     <TechMarquee />
     <Stats />
+    <AboutIntro />
 
     <section id="featured-work" className="section">
       <div className="container">

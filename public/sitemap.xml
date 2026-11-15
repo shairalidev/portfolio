@@ -2,28 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://shairali.com/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>1.0</priority>
     <image:image><image:loc>https://shairali.com/images/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/profile/shair-ali.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/thumb.webp</image:loc></image:image>
   </url>
-  <url><loc>https://shairali.com/work</loc><lastmod>2026-11-14</lastmod><priority>0.9</priority></url>
   <url>
-    <loc>https://shairali.com/work/rivelya</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority>
+    <loc>https://shairali.com/work</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/thumb.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/thumb.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://shairali.com/work/rivelya</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
     <image:image><image:loc>https://shairali.com/images/projects/rivelya/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/experts.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/expert-profile.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/journey-10.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/rivelya/journey-12.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://shairali.com/work/cover-me-lien-services</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority>
+    <loc>https://shairali.com/work/cover-me-lien-services</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
     <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/mobile.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/deadline-calculator.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/intake-checkout.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/client-dashboard.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/attorney-partners.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/how-it-works.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/attorney-services.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/intake-start.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/intake-contact.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/cover-me-lien-services/about.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://shairali.com/work/tenant-certification</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority>
+    <loc>https://shairali.com/work/tenant-certification</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
     <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/mobile.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/course-curriculum.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/stellar-credential.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/train-verify-connect.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/choose-version.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/mission.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/why-certification.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/win-win-dashboard.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/what-is-certification.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/tenant-certification/shared-responsibility.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://shairali.com/work/grand-hotel-selinunte</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority>
+    <loc>https://shairali.com/work/grand-hotel-selinunte</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
     <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/mobile.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/rooms-dining.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/intro.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/projects/grand-hotel-selinunte/pool.webp</image:loc></image:image>
   </url>
-  <url><loc>https://shairali.com/services</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shairali.com/about</loc><lastmod>2026-11-14</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shairali.com/contact</loc><lastmod>2026-11-14</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://shairali.com/services</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/about</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://shairali.com/images/profile/shair-ali.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/about/shair-ali-rsci-annual-gala-award-900.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://shairali.com/credentials</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://shairali.com/images/about/shair-ali-rsci-annual-gala-award.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/images/about/shair-ali-bs-computer-science-graduate.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/docs/shair-ali-reference-letter-dr-sheheryar-malik.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/docs/shair-ali-reference-letter-dr-awais-sattar.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/docs/shair-ali-reference-letter-dr-aumm-e-hani.webp</image:loc></image:image>
+    <image:image><image:loc>https://shairali.com/docs/shair-ali-bs-computer-science-transcript.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://shairali.com/contact</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/docs/shair-ali-full-stack-developer-resume.pdf</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/docs/shair-ali-bs-computer-science-transcript.pdf</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/docs/shair-ali-reference-letter-dr-sheheryar-malik.pdf</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/docs/shair-ali-reference-letter-dr-awais-sattar.pdf</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://shairali.com/docs/shair-ali-reference-letter-dr-aumm-e-hani.pdf</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.4</priority>
+  </url>
 </urlset>
