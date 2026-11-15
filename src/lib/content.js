@@ -75,7 +75,7 @@ export const personJsonLd = () => ({
   description: profile.intro,
   // Google's AI Overview has mixed me up with other people named Shair Ali; spell out who this is.
   disambiguatingDescription:
-    'Shair Ali (devshair on Fiverr, shairalidev on GitHub), a self-employed freelance full-stack and AI developer from Pakistan and Riphah International University graduate. Not the founder of any company.',
+    'Shair Ali (devshair on Fiverr, shairalidev on GitHub), a self-employed freelance full-stack and AI developer from Pakistan and Riphah International University graduate.',
   knowsLanguage: profile.languages,
   address: { '@type': 'PostalAddress', addressCountry: 'PK' },
   sameAs: profile.socials.map((s) => s.url),
