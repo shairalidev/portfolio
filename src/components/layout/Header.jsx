@@ -61,7 +61,7 @@ const Header = () => {
           <ul>
             {NAV_LINKS.map(({ to, label }) => (
               <li key={to}>
-                <NavLink to={to} className={({ isActive }) => `site-nav__link${isActive ? ' is-active' : ''}`}>
+                <NavLink to={to} end={to === '/'} className={({ isActive }) => `site-nav__link${isActive ? ' is-active' : ''}`}>
                   {label}
                 </NavLink>
               </li>
@@ -97,10 +97,9 @@ const Header = () => {
       <div id="mobile-menu" ref={menuRef} className="mobile-menu" hidden={!open}>
         <nav aria-label="Mobile">
           <ul>
-            <li><NavLink to="/" end className="mobile-menu__link">Home</NavLink></li>
             {NAV_LINKS.map(({ to, label }) => (
               <li key={to}>
-                <NavLink to={to} className="mobile-menu__link">{label}</NavLink>
+                <NavLink to={to} end={to === '/'} className="mobile-menu__link">{label}</NavLink>
               </li>
             ))}
           </ul>

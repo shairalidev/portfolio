@@ -6,9 +6,11 @@ import credentials from '../data/credentials.json';
 export const SITE_URL = profile.siteUrl;
 
 export const NAV_LINKS = [
+  { to: '/', label: 'Home' },
   { to: '/work', label: 'Work' },
   { to: '/services', label: 'Services' },
   { to: '/about', label: 'About' },
+  { to: '/credentials', label: 'Credentials' },
   { to: '/contact', label: 'Contact' },
 ];
 

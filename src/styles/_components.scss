@@ -449,6 +449,11 @@
     @include down($bp-sm) {
       display: none;
     }
+
+    // Tablet: the full nav (incl. Contact) is showing and there is no room for the button too
+    @media (min-width: $bp-md) and (max-width: ($bp-lg - 0.02px)) {
+      display: none;
+    }
   }
 
   @include up($bp-md) {
