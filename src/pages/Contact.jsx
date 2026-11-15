@@ -61,7 +61,6 @@ const Contact = () => (
             </ul>
           </Reveal>
           <Reveal delay={280} className="contact-card contact-card--note">
-            <span className="status-pill"><i aria-hidden="true" />{profile.availability}</span>
             <p>Remote, working with clients in the USA and Europe, with several overlapping hours every day.</p>
           </Reveal>
         </div>

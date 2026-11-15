@@ -15,7 +15,6 @@ const Footer = () => (
             </span>
           </Link>
           <p>{profile.intro}</p>
-          <span className="status-pill"><i aria-hidden="true" />{profile.availability}</span>
         </div>
 
         <div className="site-footer__col">

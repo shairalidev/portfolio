@@ -81,10 +81,6 @@ const Hero = () => {
 
       <div className="container hero__inner">
         <div className="hero__content">
-          <span className="status-pill hero__status">
-            <i aria-hidden="true" />
-            {profile.availability}
-          </span>
           <h1 className="hero__title">
             I design, build &amp; run <span className="text-gradient">production web platforms</span>, end to end.
           </h1>
