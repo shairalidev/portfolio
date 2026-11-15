@@ -25,7 +25,7 @@ const Home = () => (
           '@id': `${SITE_URL}/#profile`,
           url: `${SITE_URL}/`,
           name: `${profile.name} – ${profile.role}`,
-          dateModified: '2026-11-15',
+          dateModified: '2026-11-15T00:00:00+05:00',
           inLanguage: 'en',
           mainEntity: personJsonLd(),
         },
