@@ -4,10 +4,9 @@ Goal: make the LinkedIn profile say the same thing as shairali.com, so Google co
 
 Status on 16 Nov 2026: the profile text is done (items ticked below). Still open:
 
-- **Photo:** upload the website portrait (it still shows the old photo).
 - **Fiverr experience entry:** needs the year you started on Fiverr.
-- **Old "Student at Riphah, Oct 2019 – Present" job:** still marked as current. End it at Jul 2023 or delete it.
-- **Skills:** Next.js, MongoDB, PostgreSQL, Stripe, WebRTC, n8n and CI/CD were added. Old ones (Java Swing, PHP, Android Studio) are still listed and not reordered.
+- **Old skills:** Java Swing, Android Studio, PHP, C++, Java, "freelance" (duplicate), Functionality and Computer Engineering are still listed. Deleting a skill cannot be undone, so it waits for your yes.
+- Done since: photo and banner (you), the old "Student" job now ends Jul 2023, and Next.js, MongoDB, PostgreSQL, Stripe, WebRTC, n8n, CI/CD, Express.js, Socket.io and Tailwind CSS were added as skills.
 - **Open to work** is now "Recruiters only", which removed the green frame. Delete it completely if you don't want job offers.
 - Banner and recommendations (Part 3).
 
