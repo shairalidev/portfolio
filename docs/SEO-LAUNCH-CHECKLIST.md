@@ -12,13 +12,13 @@ Honest expectation:
 | Step | Status |
 |---|---|
 | 1. Cloudflare www redirect | Done (301 to shairali.com, tested) |
-| 1. Crawler Hints | **Not done** (needs you to accept Cloudflare's extra terms) |
+| 1. Crawler Hints | Done (switched on) |
 | 2. Search Console: verify, sitemap | Done (20 pages read) |
 | 2. Request indexing | Done. Home, About, Work, Contact and the service pages are on Google |
 | 2. Rich Results | Profile page and image metadata detected as valid |
 | 3. Bing Webmaster Tools | **Not done** |
 | 4. GitHub | Done (website link + profile README) |
-| 4. LinkedIn | **Not done** (no website link, old headline, different photo) |
+| 4. LinkedIn | Mostly done (website link, headline, About, experience, Featured, services). Photo still to upload; see `docs/LINKEDIN-TODO.md` |
 | 4. X, Fiverr | Check the bio link and use the same portrait |
 | 4. dev.to / Medium posts | **Not done** |
 | 4. "Built by Shair Ali" on client sites | **Not done** (none of the three live client sites has it) |

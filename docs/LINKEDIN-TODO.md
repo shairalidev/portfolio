@@ -2,30 +2,32 @@
 
 Goal: make the LinkedIn profile say the same thing as shairali.com, so Google connects the two and stops mixing you up with other people named Shair Ali. **No posting is needed for any of this.**
 
-How it looks today (checked 16 Nov 2026):
+Status on 16 Nov 2026: the profile text is done (items ticked below). Still open:
 
-- Headline: "Freelancer | fiverr top seller | Desktop Application developer | Full stack Developer"
-- No website link in Contact info
-- A different photo from the website, with the green #OpenToWork frame
-- 500+ connections
+- **Photo:** upload the website portrait (it still shows the old photo).
+- **Fiverr experience entry:** needs the year you started on Fiverr.
+- **Old "Student at Riphah, Oct 2019 – Present" job:** still marked as current. End it at Jul 2023 or delete it.
+- **Skills:** Next.js, MongoDB, PostgreSQL, Stripe, WebRTC, n8n and CI/CD were added. Old ones (Java Swing, PHP, Android Studio) are still listed and not reordered.
+- **Open to work** is now "Recruiters only", which removed the green frame. Delete it completely if you don't want job offers.
+- Banner and recommendations (Part 3).
 
 ## Before you start: stop LinkedIn announcing your edits
 
-- [ ] Go to **Me → Settings & Privacy → Visibility → Share profile updates with your network** and turn it **Off**.
+- [x] Go to **Me → Settings & Privacy → Visibility → Share profile updates with your network** and turn it **Off**.
 
 With this off, changing your headline, jobs or education does not appear in anyone's feed. Do this first.
 
 ## Part 1: the five changes that matter most (about 15 minutes)
 
-- [ ] **Website link.** Profile → Contact info → Edit → Website: `https://shairali.com`, type "Portfolio".
-- [ ] **Headline.** Replace it with:
+- [x] **Website link.** Profile → Contact info → Edit → Website: `https://shairali.com`, type "Portfolio".
+- [x] **Headline.** Replace it with:
 
   > Shair Ali – Freelance Full-Stack & AI Developer | React, Next.js, Node.js | I build, fix and deploy web apps
 
   The current one says "fiverr top seller". Your Fiverr level is Level 1 Seller, and "Top Rated" is a different Fiverr level, so the new headline leaves it out.
 - [ ] **Photo.** Upload the same portrait as the website: `public/images/profile/shair-ali-full-stack-developer.jpg`. The same face on LinkedIn, GitHub, Fiverr and the site is how Google learns which images are you.
-- [ ] **#OpenToWork frame.** Change "Open to work" to **"Providing services"** (Open to → Providing services). The green frame tells clients you are looking for a job. "Providing services" tells them you can be hired for a project.
-- [ ] **About section.** Paste this:
+- [x] **#OpenToWork frame.** Change "Open to work" to **"Providing services"** (Open to → Providing services). The green frame tells clients you are looking for a job. "Providing services" tells them you can be hired for a project.
+- [x] **About section.** Paste this:
 
   > I'm Shair Ali, a solo full-stack and AI developer. I work with founders and growing businesses in the USA and Europe, through Fiverr and directly.
   >
@@ -43,7 +45,7 @@ With this off, changing your headline, jobs or education does not appear in anyo
 
 ## Part 2: fill in the profile (about 30 minutes)
 
-- [ ] **Experience.** Add one entry per client. Each line below is title · company · dates, then the description.
+- [ ] **Experience.** The four client entries are added; only the Fiverr entry is missing. Add one entry per client. Each line below is title · company · dates, then the description.
   - Full-Stack Developer (solo) · Cover Me Lien Services (CoverM Enterprise, LLC), California · 2026
     Designed, built and deployed a lien-compliance SaaS with a deadline calculator, Stripe checkout, a secure client portal and an admin back office.
   - Lead & Sole Developer · Stellar Properties Certification, LLC, USA · 2025 – present
@@ -54,15 +56,15 @@ With this off, changing your headline, jobs or education does not appear in anyo
     Built the hotel's website, AI chat support with WhatsApp, and internal quote and receipt tools.
   - Freelance Developer · Fiverr (Level 1 Seller) and direct clients · ongoing
     Web apps, automation tools and integrations for clients worldwide. Fiverr profile: fiverr.com/devshair
-- [ ] **Education.** Riphah International University, BS Computer Science, 2019 – 2023, CGPA 3.75 / 4.00.
-- [ ] **Honors & awards.** "Academic excellence award", RSCI Annual Gala, Riphah School of Computing & Innovation.
-- [ ] **Featured.** Add these as *links* (a link in Featured is not a post):
+- [x] **Education.** Riphah International University, BS Computer Science, 2019 – 2023, CGPA 3.75 / 4.00.
+- [x] **Honors & awards.** "Academic excellence award", RSCI Annual Gala, Riphah School of Computing & Innovation.
+- [x] **Featured.** Add these as *links* (a link in Featured is not a post):
   - https://shairali.com
   - https://shairali.com/work/rivelya
   - https://shairali.com/work/cover-me-lien-services
   - https://shairali.com/achievements
 - [ ] **Skills.** Put these at the top and remove ones you no longer use (for example desktop applications, if that is no longer your work): React.js, Next.js, Node.js, MongoDB, PostgreSQL, Stripe, WebRTC, AI chatbots, n8n, AWS, CI/CD.
-- [ ] **Services page.** Under "Providing services", pick Web Development, Application Development and Custom Software Development, and add the shairali.com link.
+- [x] **Services page.** Under "Providing services", pick Web Development, Application Development and Custom Software Development, and add the shairali.com link.
 - [ ] **Background banner.** Optional. A simple dark banner with "Shair Ali · Full-Stack & AI Developer · shairali.com".
 
 ## Part 3: later, when you have time
