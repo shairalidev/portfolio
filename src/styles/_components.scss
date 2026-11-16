@@ -1089,8 +1089,18 @@
   color: #ffc9c9;
   font-size: 14px;
 
-  a {
-    text-decoration: underline;
+  p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
   }
 }
 

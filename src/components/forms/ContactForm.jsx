@@ -9,6 +9,7 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const PROJECT_TYPES = ['New web app / SaaS', 'Marketplace or real-time app', 'Payments integration', 'AI assistant / automation', 'Take over an existing project', 'Something else'];
 const BUDGETS = ['Under $1,000', '$1,000 – $5,000', '$5,000 – $15,000', '$15,000+', 'Not sure yet'];
+const SEND_FAILED = "Sorry, the form couldn't send your message. Your text is still here: send it with one click below.";
 const INITIAL = { name: '', email: '', type: PROJECT_TYPES[0], budget: BUDGETS[4], message: '', website: '' };
 
 const ContactForm = () => {
@@ -45,7 +46,7 @@ const ContactForm = () => {
     }
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       setStatus('error');
-      setError('The form is temporarily unavailable. Please email me or use WhatsApp.');
+      setError(SEND_FAILED);
       return;
     }
     setStatus('sending');
@@ -65,10 +66,16 @@ const ContactForm = () => {
       setStatus('success');
       setFields(INITIAL);
     } catch (err) {
+      // Never show the provider's raw error (e.g. "Gmail_API: Invalid grant") to a visitor.
+      console.error('Contact form send failed:', err?.status, err?.text || err);
       setStatus('error');
-      setError(err?.text || 'Something went wrong. Please try again, or email me directly.');
+      setError(SEND_FAILED);
     }
   };
+
+  // If sending fails, the visitor can still deliver what they typed with one click.
+  const fallbackText = `${fields.message.trim()}\n\nFrom: ${fields.name.trim()} (${fields.email.trim()})\nProject type: ${fields.type}\nBudget: ${fields.budget}`;
+  const mailtoUrl = `mailto:${profile.email}?subject=${encodeURIComponent(`Project enquiry: ${fields.type}`)}&body=${encodeURIComponent(fallbackText)}`;
 
   if (status === 'success') {
     return (
@@ -134,10 +141,21 @@ const ContactForm = () => {
       </label>
 
       {status === 'error' && (
-        <p className="form-error" role="alert">
-          <Icon icon="solar:danger-triangle-linear" aria-hidden="true" /> {error}{' '}
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>
-        </p>
+        <div className="form-error" role="alert">
+          <p>
+            <Icon icon="solar:danger-triangle-linear" aria-hidden="true" /> {error}
+          </p>
+          <div className="form-error__actions">
+            <a href={whatsappUrl(fallbackText)} target="_blank" rel="noopener noreferrer" className="btn btn--whatsapp btn--md">
+              <Icon icon="ic:baseline-whatsapp" className="btn__icon" aria-hidden="true" />
+              <span>Send it on WhatsApp</span>
+            </a>
+            <a href={mailtoUrl} className="btn btn--ghost btn--md">
+              <Icon icon="solar:letter-linear" className="btn__icon" aria-hidden="true" />
+              <span>Send it by email</span>
+            </a>
+          </div>
+        </div>
       )}
 
       <button type="submit" className="btn btn--primary btn--lg" disabled={sending}>
