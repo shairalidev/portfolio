@@ -11,13 +11,16 @@ https://:version.:project.pages.dev/*
   Cache-Control: public, max-age=31536000, immutable
 
 /images/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/favicon.ico
+  Cache-Control: public, max-age=2592000
 
 /docs/*
   Cache-Control: public, max-age=86400
 
 /videos/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
 
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains

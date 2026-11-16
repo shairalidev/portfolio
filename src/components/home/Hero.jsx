@@ -9,14 +9,23 @@ import { profile, projects, whatsappUrl } from '../../lib/content';
 
 const Hero3D = lazy(() => import('./Hero3D'));
 
-const supportsWebGL = () => {
+// True only for hardware-accelerated WebGL. Software renderers (SwiftShader, llvmpipe, headless test
+// machines, PCs without a GPU) can technically run the scene but block the main thread for seconds.
+const supportsFastWebGL = () => {
   try {
     const canvas = document.createElement('canvas');
-    return !!(window.WebGLRenderingContext && (canvas.getContext('webgl2') || canvas.getContext('webgl')));
+    const gl = window.WebGLRenderingContext && (canvas.getContext('webgl2') || canvas.getContext('webgl'));
+    if (!gl) return false;
+    const info = gl.getExtension('WEBGL_debug_renderer_info');
+    const renderer = info ? String(gl.getParameter(info.UNMASKED_RENDERER_WEBGL)) : '';
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+    return !/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer);
   } catch {
     return false;
   }
 };
+
+const INTERACTION_EVENTS = ['pointermove', 'pointerdown', 'wheel', 'scroll', 'keydown', 'touchstart'];
 
 /** CSS-3D stack of project screens: shown on phones, without WebGL, or while the 3D scene loads. */
 const HeroStack = () => (
@@ -35,16 +44,22 @@ const Hero = () => {
   const [use3D, setUse3D] = useState(false);
   const [ref, inView] = useInView({ once: false, threshold: 0, rootMargin: '0px' });
 
-  // The WebGL scene (~220 KB gzipped) is only requested once the page is idle, so it never delays
-  // first paint. Its textures are preloaded first, so the screens appear together with the canvas.
+  // The WebGL scene (~220 KB gzipped) is only requested after the visitor first interacts (moves the
+  // mouse, scrolls, presses a key), so it never competes with page load; the CSS stack shows until then.
+  // Its textures are preloaded first, so the screens appear together with the canvas.
   useEffect(() => {
     const saveData = navigator.connection?.saveData;
-    if (reduced || saveData || window.innerWidth < 1024 || !supportsWebGL()) {
+    const lowEnd = (navigator.hardwareConcurrency || 4) <= 2;
+    if (reduced || saveData || lowEnd || window.innerWidth < 1024 || !supportsFastWebGL()) {
       setUse3D(false);
       return undefined;
     }
     let cancelled = false;
+    let started = false;
     const start = () => {
+      if (started) return;
+      started = true;
+      INTERACTION_EVENTS.forEach((e) => window.removeEventListener(e, start));
       const textures = projects.slice(0, 3).map((p) => {
         const img = new Image();
         img.src = p.cover;
@@ -52,16 +67,10 @@ const Hero = () => {
       });
       Promise.all([import('./Hero3D'), ...textures]).then(() => !cancelled && setUse3D(true));
     };
-    const idle = window.requestIdleCallback
-      ? window.requestIdleCallback.bind(window)
-      : (cb) => window.setTimeout(cb, 800);
-    const cancelIdle = window.cancelIdleCallback
-      ? window.cancelIdleCallback.bind(window)
-      : window.clearTimeout.bind(window);
-    const id = idle(start, { timeout: 2500 });
+    INTERACTION_EVENTS.forEach((e) => window.addEventListener(e, start, { once: true, passive: true }));
     return () => {
       cancelled = true;
-      cancelIdle(id);
+      INTERACTION_EVENTS.forEach((e) => window.removeEventListener(e, start));
     };
   }, [reduced]);
 
