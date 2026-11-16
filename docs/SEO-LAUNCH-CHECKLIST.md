@@ -7,6 +7,23 @@ Honest expectation:
 - **"Shair Ali" alone:** achievable, but you compete with other people's LinkedIn and Instagram profiles. Backlinks (step 3) decide it.
 - **"Ali" alone:** not realistically rankable by anyone.
 
+## Status on 16 Nov 2026
+
+| Step | Status |
+|---|---|
+| 1. Cloudflare www redirect | Done (301 to shairali.com, tested) |
+| 1. Crawler Hints | **Not done** (needs you to accept Cloudflare's extra terms) |
+| 2. Search Console: verify, sitemap | Done (20 pages read) |
+| 2. Request indexing | Done. Home, About, Work, Contact and the service pages are on Google |
+| 2. Rich Results | Profile page and image metadata detected as valid |
+| 3. Bing Webmaster Tools | **Not done** |
+| 4. GitHub | Done (website link + profile README) |
+| 4. LinkedIn | **Not done** (no website link, old headline, different photo) |
+| 4. X, Fiverr | Check the bio link and use the same portrait |
+| 4. dev.to / Medium posts | **Not done** |
+| 4. "Built by Shair Ali" on client sites | **Not done** (none of the three live client sites has it) |
+| 4. Riphah, Google Business Profile | Optional, not done |
+
 ## Already done in the code
 
 - Your name is in the home page H1, the intro text and every page title.
