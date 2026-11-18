@@ -2,6 +2,7 @@
 # Legacy project URLs from the old site:
 /project/:slug  /work/:slug  301
 /credentials  /achievements  301
+/home  /  301
 /images/Resume.pdf  /docs/shair-ali-full-stack-developer-resume.pdf  301
 /images/profile/shair-ali.webp  /images/profile/shair-ali-full-stack-developer.webp  301
 /favicon.svg  /favicon.ico  301

@@ -32,6 +32,7 @@ export const AppRoutes = () => (
       <Route path="contact" element={<Contact />} />
       <Route path="achievements" element={<Achievements />} />
       <Route path="credentials" element={<Navigate to="/achievements" replace />} />
+      <Route path="home" element={<Navigate to="/" replace />} />
       <Route path="project/:slug" element={<LegacyProjectRedirect />} />
       <Route path="*" element={<NotFound />} />
     </Route>
